@@ -1,0 +1,54 @@
+
+
+<div class="container">
+    <div class="title">{{'AUTH_FEATURES.SIGNIN.TITLE' | translate}}</div>
+    <div class="form ">
+        <form [formGroup]="signInForm" (ngSubmit)="onSubmit()">
+            <div style="display: flex; flex-direction: column;">
+                <label class="label">{{'SHARED.EMAIL' | translate}}</label>
+                <input pInputText class="custom"  type="email"  formControlName="email"
+                    [ngClass]="{'ng-invalid ng-dirty' : signInForm.controls.email.invalid && signInForm.controls.email.touched}" />
+                <div *ngIf="signInForm.controls.email.invalid && signInForm.controls.email.touched">
+                    <small class="p-error">
+                        <p class="text-error">{{'AUTH_FEATURES.SIGNIN.EMAIL_NOT_VALID' | translate}}</p>
+                    </small>
+                </div>
+
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <label class="label">{{'SHARED.PASSWORD' | translate}}</label>
+                <p-password class="custom"  formControlName="password" [feedback]="false"
+                    [ngClass]="{'ng-invalid ng-dirty' : signInForm.controls.password.invalid && signInForm.controls.password.touched}"></p-password>
+                <div *ngIf="signInForm.controls.password.touched && signInForm.controls.password.invalid">
+                    <small class="p-error" *ngIf="signInForm.controls.password?.errors?.required">
+                        <p class="text-error">{{'AUTH_FEATURES.SIGNIN.PASSWORD_REQUIRED' | translate}}</p>
+                    </small>
+                    <small class="p-error" *ngIf="signInForm.controls.password?.errors?.['minlength']">
+                        <p class="text-error"> {{'AUTH_FEATURES.SIGNIN.PASSWORD_LENGTH' | translate}}</p>
+                    </small>
+                </div>
+            </div>
+            <div class="instructions">
+                <div class="checkbox-block">
+                    <p-checkbox [(ngModel)]="stayConnected"
+                        [ngModelOptions]="{standalone: true}" [binary]="true" inputId="binary"></p-checkbox>
+                    <p class="text"> {{'AUTH_FEATURES.SIGNIN.STAY_CONNECTED' | translate}}</p>
+                </div>
+                <div>
+                    <a [routerLink]="['/forget_password']"  >
+                        <p class="link"> {{'AUTH_FEATURES.SIGNIN.FORGOT_PASSWORD' | translate}}</p>
+                    </a>
+                </div>
+
+            </div>
+
+            <button class="btn"> {{'AUTH_FEATURES.SIGNIN.SIGNIN_BUTTON' | translate}}</button>
+            <div class="register">
+                <div>
+                    <p class="text"> {{'AUTH_FEATURES.SIGNIN.DONT_HAVE_ACCOUNT' | translate}} &nbsp;</p>
+                </div>
+                <div><a href="#blank" class="link"> {{'AUTH_FEATURES.SIGNIN.SIGNUP' | translate}}</a></div>
+            </div>
+        </form>
+    </div>
+</div>

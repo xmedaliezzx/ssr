@@ -1,0 +1,31 @@
+<div (click)="retour()" class="profil">
+    <img style="margin-left: 18px;transform: matrix(-1, 0, 0, -1, 0, 0);" src="../../../../../assets/images/play.svg">
+    Profil
+</div>
+<div class="bigSection">
+    Gestion Du Compte
+    <img style="margin-left: 18px;" src="../../../../../assets/icons/arrowForm.svg">
+</div>
+<!-- <div class="smallSection">
+    Désactivation du compte
+    <img style="margin-left: 18px;" src="../../../../../assets/icons/arrowForm.svg">
+</div>
+<hr>
+<div class="smallSection">
+    Suppression du compte
+    <img style="margin-left: 18px;" src="../../../../../assets/icons/arrowForm.svg">
+</div> -->
+
+<p-accordion>
+    <p-accordionTab headerStyleClass="smallSection" contentStyleClass="content" header="Désactivation du compte">
+        <p-button type="submit" (click)="open('deactivationReasonModal')" styleClass="btn-deactivate">
+            <img class="image-icon" src="../../../../../assets/icons/interdit.svg" />Désactiver le compte</p-button>
+    </p-accordionTab>
+    <hr>
+    <p-accordionTab headerStyleClass="smallSection" contentStyleClass="content" header=" Suppression du compte">
+        <p-button type="submit" (click)="open('deleteAccountModal')" styleClass="btn-Delete">
+            <img class="image-icon" src="../../../../../assets/icons/garbage.svg" />Supprimer
+            le compte</p-button>
+    </p-accordionTab>
+
+</p-accordion>

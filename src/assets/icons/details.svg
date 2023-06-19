@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="443" height="100" viewBox="0 0 443 100">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="443" height="100" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Groupe_défilant_102" data-name="Groupe défilant 102" clip-path="url(#clip-path)" style="mix-blend-mode: normal;isolation: isolate">
+    <g id="Groupe_12292" data-name="Groupe 12292" transform="translate(-158 -884)">
+      <rect id="Rectangle_3568" data-name="Rectangle 3568" width="443" height="89" transform="translate(158 884)" fill="#dddfe6"/>
+      <g id="Groupe_12291" data-name="Groupe 12291">
+        <g id="Groupe_12289" data-name="Groupe 12289" transform="translate(5)">
+          <text id="_10:20_AM_Soins_:_Consultation_a_domicile_Emplacement_:_immeuble_kaila_sahloul_Sousse" data-name="10:20 AM
+Soins : Consultation a domicile
+Emplacement : immeuble kaila sahloul, Sousse" transform="translate(180 913)" fill="#2e3c66" font-size="15" font-family="MADETOMMY-Medium, MADE TOMMY" font-weight="500"><tspan x="0" y="0">10:20 AM</tspan><tspan x="0" y="21.224">Soins :</tspan><tspan y="21.224" xml:space="preserve" font-family="MADETOMMY, MADE TOMMY" font-weight="400"> Consultation a domicile</tspan><tspan x="0" y="42.449">Emplacement :</tspan><tspan y="42.449" xml:space="preserve" font-family="MADETOMMY, MADE TOMMY" font-weight="400"> immeuble kaila sahloul, Sousse</tspan></text>
+          <line id="Ligne_184" data-name="Ligne 184" y2="54" transform="translate(170.5 901.5)" fill="none" stroke="#2e3c66" stroke-linecap="round" stroke-width="3"/>
+        </g>
+        <g id="Groupe_12290" data-name="Groupe 12290" transform="translate(-567.422 42)">
+          <path id="Tracé_7814" data-name="Tracé 7814" d="M7.046,6,1.42,9.855a1.373,1.373,0,0,1-.739.273C.26,10.127,0,9.79,0,9.225V.9C0,.337.26,0,.679,0a1.362,1.362,0,0,1,.736.273L7.044,4.124a1.155,1.155,0,0,1,.562.94A1.151,1.151,0,0,1,7.046,6Z" transform="translate(1136.777 860)" fill="#2e3c66"/>
+          <text id="Details" transform="translate(1086.855 856)" fill="#2e3c66" font-size="14" font-family="MADETOMMY, MADE TOMMY"><tspan x="0" y="14">Details</tspan></text>
+        </g>
+      </g>
+    </g>
+    <g id="Groupe_12296" data-name="Groupe 12296" transform="translate(-158 -784)">
+      <rect id="Rectangle_3569" data-name="Rectangle 3569" width="443" height="89" transform="translate(158 884)" fill="#dddfe6"/>
+      <g id="Groupe_12295" data-name="Groupe 12295">
+        <g id="Groupe_12293" data-name="Groupe 12293" transform="translate(5)">
+          <text id="_15:30_AM_Soins_:_Consultation_a_domicile_Emplacement_:_immeuble_kaila_sahloul_Sousse" data-name="15:30 AM
+Soins : Consultation a domicile
+Emplacement : immeuble kaila sahloul, Sousse" transform="translate(180 913)" fill="#2e3c66" font-size="15" font-family="MADETOMMY-Medium, MADE TOMMY" font-weight="500"><tspan x="0" y="0">15:30 AM</tspan><tspan x="0" y="21.224">Soins :</tspan><tspan y="21.224" xml:space="preserve" font-family="MADETOMMY, MADE TOMMY" font-weight="400"> Consultation a domicile</tspan><tspan x="0" y="42.449">Emplacement :</tspan><tspan y="42.449" xml:space="preserve" font-family="MADETOMMY, MADE TOMMY" font-weight="400"> immeuble kaila sahloul, Sousse</tspan></text>
+          <line id="Ligne_185" data-name="Ligne 185" y2="54" transform="translate(170.5 901.5)" fill="none" stroke="#2e3c66" stroke-linecap="round" stroke-width="3"/>
+        </g>
+        <g id="Groupe_12294" data-name="Groupe 12294" transform="translate(-567.422 42)">
+          <path id="Tracé_7814-2" data-name="Tracé 7814" d="M7.046,6,1.42,9.855a1.373,1.373,0,0,1-.739.273C.26,10.127,0,9.79,0,9.225V.9C0,.337.26,0,.679,0a1.362,1.362,0,0,1,.736.273L7.044,4.124a1.155,1.155,0,0,1,.562.94A1.151,1.151,0,0,1,7.046,6Z" transform="translate(1136.777 860)" fill="#2e3c66"/>
+          <text id="Details-2" data-name="Details" transform="translate(1086.855 856)" fill="#2e3c66" font-size="14" font-family="MADETOMMY, MADE TOMMY"><tspan x="0" y="14">Details</tspan></text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

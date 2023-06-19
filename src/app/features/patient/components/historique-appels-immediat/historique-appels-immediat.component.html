@@ -1,0 +1,75 @@
+<div style="display: flex; flex-direction: column; justify-content: space-between; height: 70vh;">
+
+<div class="big-box">
+  <div *ngFor="let item of itemsOnCurrentPage">
+    <div class="box">
+      <form [formGroup]="singalForm">
+        <div class="light-card">
+          <div class="card-header">
+            <div class="user-data">
+              <div class="image-block">
+                <img
+                  src="{{ item.image }}"
+                  [alt]=""
+                  class="thumbnail-img-historique"
+                />
+              </div>
+              <div class="title-block">
+                <div class="header">
+                  <div style="display: flex; align-items: center">
+                    <div class="name">{{ item.name }}</div>
+                  </div>
+
+                  <div>
+                    <span class="dropdown">
+                      <p-dropdown
+                        [options]="signal"
+                        value="signal"
+                        formControlName="selectedType"
+                      ></p-dropdown>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="fonction">{{ item.age }}</div>
+                <div>
+                  <img
+                    class="etoile"
+                    src="../../../../../assets/icons/rating.svg"
+                  />
+                </div>
+                <div class="fonction">
+                  <a>Consultation : </a> <a> 80 TND </a>
+                </div>
+                <div class="card-content">
+                  <div class="delais-historique">
+                    <div class="card-body">
+                      <div class="left-date">
+                        <img
+                          src="/assets/green-calendar.svg"
+                          alt="calendar"
+                          class="light-icon"
+                        />
+                        <span class="text-date">{{ item.startDate }} </span>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div class="date">
+                        <i class="fa-regular fa-clock green-icon"></i>
+                        <span class="text-date">{{ item.startTime }} </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<div  class="card flex justify-content-center " styleClass="page"
+>
+  <p-paginator [rows]="pageSize" [totalRecords]="totalRecords" (onPageChange)="onPageChange($event)"></p-paginator></div>
+</div>

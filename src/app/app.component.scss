@@ -1,0 +1,20 @@
+app-footer {
+  display: flex;
+}
+
+.container {
+  margin-left: 3%;
+  padding-right: 3%;
+}
+.big {
+  display: flex;
+
+  justify-content: center;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    margin-left: 6.86%;
+    padding-right: 6.86%;
+  }
+}

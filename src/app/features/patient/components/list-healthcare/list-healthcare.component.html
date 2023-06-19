@@ -1,0 +1,233 @@
+<app-navbar></app-navbar>
+<div class="wrapper" style="padding: 1rem 1rem 0rem 1rem">
+  <div class="list">
+    <div class="care-list">
+      <div class="care-type">
+        <p class="care">Paramédical</p>
+        <i
+          class="fa-solid pointer"
+          [ngClass]="fields['ParamedicalSpeciality'] ? 'fa-minus' : 'fa-plus'"
+          (click)="open('ParamedicalSpeciality')"
+        ></i>
+      </div>
+      <div
+        class="pointer"
+        [ngClass]="
+          !fields.ParamedicalSpeciality
+            ? 'specialtyVisibility'
+            : 'specialtyVisibility2'
+        ">
+        <div class="specialty" (click)="chooseService('infirmier')">
+          <p class="care">Infirmière / Infirmier</p>
+        </div>
+        <div class="specialty"  (click)="chooseService('technicien_reanimation')">
+          <p class="care">Technicien en réanimation</p>
+        </div>
+        <div class="specialty"  (click)="chooseService('aide_soignant')">
+          <p class="care">Aide-soignante / Aide-soignant</p>
+        </div>
+        <div class="specialty"  (click)="chooseService('auxiliaire_vie')">
+          <p class="care">Auxiliaire de vie</p>
+        </div>
+        <div class="specialty"  (click)="chooseService('kinesitherapeute')">
+          <p class="care">kinésithérapeute</p>
+        </div>
+      </div>
+    </div>
+    <div class="care-list">
+      <div class="care-type">
+        <p class="care">Médecins</p>
+        <i
+          class="fa-solid pointer"
+          [ngClass]="fields['MedecinsSpeciality'] ? 'fa-minus' : 'fa-plus'"
+          (click)="open('MedecinsSpeciality')"
+        ></i>
+      </div>
+      <div
+        class="pointer"
+        [ngClass]="
+          !fields.MedecinsSpeciality
+            ? 'specialtyVisibility'
+            : 'specialtyVisibility2'
+        "
+      >
+        <div class="specialty" (click)="chooseService('medecin_generaliste')">
+          <p class="care">Médecin géneraliste</p>
+        </div>
+        <div class="specialty" (click)="chooseService('medecin_physique')">
+          <p class="care">Médecin physique </p>
+        </div>
+        <div class="specialty" (click)="chooseService('medecin_anti_douleur')">
+          <p class="care">Médecin anti-douleur</p>
+        </div>
+        <div class="specialty" (click)="chooseService('medecin_cardiologue')" >
+          <p class="care">Médecin cardiologue</p>
+        </div>
+        <div class="specialty" (click)="chooseService('medecin_neurologue')" >
+          <p class="care">Médecin neurologue</p>
+        </div>
+        <div class="specialty" (click)="chooseService('medecin_pneumologue')" >
+          <p class="care">Médecin pneumologue</p>
+        </div>
+        <div class="specialty" (click)="chooseService('medecin_pediatre')">
+          <p class="care">Médecin pédiatre</p>
+        </div>
+      </div>
+    </div>
+    <div class="care-list">
+      <div class="care-type">
+        <p class="care">Transport Medical</p>
+        <i
+          class="fa-solid pointer fa-plus"
+         
+          (click)="chooseService('Transport_medical')"
+        ></i>
+        <!-- <i
+          class="fa-solid pointer"
+          [ngClass]="
+            fields['TransportMedicalSpeciality'] ? 'fa-minus' : 'fa-plus'
+          "
+          (click)="open('TransportMedicalSpeciality')"
+        ></i> -->
+      </div>
+      <!-- <div
+        class="pointer"
+        [ngClass]="
+          !fields.TransportMedicalSpeciality
+            ? 'specialtyVisibility'
+            : 'specialtyVisibility2'
+        "
+      >
+        <div class="specialty">
+          <p class="care">Infirmière / Infirmier</p>
+        </div>
+        <div class="specialty">
+          <p class="care">Technicien en réanimation</p>
+        </div>
+        <div class="specialty">
+          <p class="care">Aide-soignante / Aide-soignant</p>
+        </div>
+        <div class="specialty">
+          <p class="care">kinésithérapeute</p>
+        </div>
+      </div> -->
+    </div>
+    <div class="care-list">
+      <div class="care-type">
+        <p class="care">Maison De Retraite</p>
+        <i
+          class="fa-solid pointer fa-plus"
+          (click)="chooseServicesanspop('maison_retraite')"
+        ></i>
+        <!-- <i
+          class="fa-solid pointer"
+          [ngClass]="
+            fields['MaisonRetraiteSpeciality'] ? 'fa-minus' : 'fa-plus'
+          "
+          (click)="open('MaisonRetraiteSpeciality')"
+        ></i> -->
+      </div>
+      <!-- <div
+        class="pointer"
+        [ngClass]="
+          !fields.MaisonRetraiteSpeciality
+            ? 'specialtyVisibility'
+            : 'specialtyVisibility2'
+        "
+      >
+        <div class="specialty">
+          <p class="care">Infirmière / Infirmier</p>
+        </div>
+        <div class="specialty">
+          <p class="care">Technicien en réanimation</p>
+        </div>
+        <div class="specialty">
+          <p class="care">Aide-soignante / Aide-soignant</p>
+        </div>
+        <div class="specialty">
+          <p class="care">kinésithérapeute</p>
+        </div>
+      </div> -->
+    </div>
+    <div class="care-list">
+      <div class="care-type">
+        <p class="care">Parapharmacie</p>
+        <i
+        (click)="chooseService('parapharmacie')"
+          class="fa-solid pointer fa-plus"
+      
+        ></i>
+        <!-- <i
+          class="fa-solid pointer"
+          [ngClass]="fields['ParapharmacieSpeciality'] ? 'fa-minus' : 'fa-plus'"
+          (click)="open('ParapharmacieSpeciality')"
+        ></i> -->
+      </div>
+  
+    </div>
+    <div class="care-list">
+      <div class="care-type">
+        <p class="care">Laboratoires</p>
+      
+
+        <i
+        (click)="chooseService('laboratoires')"
+          class="fa-solid pointer fa-plus"
+      
+        ></i>
+        <!-- <i
+          class="fa-solid pointer"
+          [ngClass]="fields['LaboratoiresSpeciality'] ? 'fa-minus' : 'fa-plus'"
+          (click)="open('LaboratoiresSpeciality')"
+        ></i> -->
+      </div>
+      <!-- <div
+        class="pointer"
+        [ngClass]="
+          !fields.LaboratoiresSpeciality
+            ? 'specialtyVisibility'
+            : 'specialtyVisibility2'
+        "
+      >
+        <div class="specialty">
+          <p class="care">Infirmière / Infirmier</p>
+        </div>
+        <div class="specialty">
+          <p class="care">Technicien en réanimation</p>
+        </div>
+        <div class="specialty">
+          <p class="care">Aide-soignante / Aide-soignant</p>
+        </div>
+        <div class="specialty">
+          <p class="care">kinésithérapeute</p>
+        </div>
+      </div> -->
+    </div>
+    <div class="care-list">
+      <div class="care-type">
+        <p class="care">Baby-Sitting</p>
+        <i
+          class="fa-solid pointer fa-plus"
+          (click)="chooseService('baby_sitting')"
+        ></i> 
+        <!-- <i
+          class="fa-solid pointer"
+          [ngClass]="fields['BabySittingSpeciality'] ? 'fa-minus' : 'fa-plus'"
+          (click)="open('BabySittingSpeciality')"
+        ></i> -->
+      </div>
+  
+    </div>
+    <div class="care-list">
+      <div class="care-type">
+        <p class="care">Pomp Funèbre</p>
+        <i
+          class="fa-solid pointer fa-plus"
+          (click)="chooseService('pomp_funebre')"
+          
+        ></i>
+      </div>
+
+    </div>
+  </div>
+</div>

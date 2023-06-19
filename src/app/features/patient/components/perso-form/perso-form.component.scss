@@ -1,0 +1,484 @@
+.wrapper {
+  padding-top: 70px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  padding: 35px;
+}
+
+.leftSide {
+  width: 50%;
+  overflow-y: auto;
+  overflow: auto;
+  max-height: 80vh;
+}
+
+.leftSide::-webkit-scrollbar {
+  width: 0px;
+  /* Width of the scrollbar */
+}
+
+.profil {
+  font-size: 18px;
+  color: #2A8F9B;
+  font-family: tommy_Regular;
+}
+
+.titleText {
+  color: #1b8793;
+  font-size: clamp(16px, 75%, 18px);
+  font-family: tommy_Regular;
+  margin-top: 14px;
+  margin-bottom: 13px;
+}
+
+.merci {
+  font-family: tommy_Regular;
+  font-size: 18p;
+  width: 87%;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  color: var(--blue-2);
+  font-size: clamp(20px, 75%, 40px);
+  font-family: buttershine;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.subtitle {
+  color: var(--blue-2);
+  font-size: clamp(16px, 75%, 18px);
+  font-family: tommy_Bold;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.text {
+  color: var(--blue-2);
+  font-size: clamp(12px, 75%, 15px);
+  font-family: tommy_Regular;
+  margin-left: 5px;
+}
+
+.link {
+  color: var(--blue);
+  font-size: clamp(12px, 75%, 15px);
+  font-family: tommy_Regular;
+}
+
+.image-modif {
+  position: absolute;
+  right: 192px;
+  top: 197vh;
+}
+
+::ng-deep {
+  .btn-Signup {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: var(--green);
+    border-radius: 5px;
+    line-height: 38px;
+    height: 38px;
+    border: 0;
+    color: var(--white);
+    margin-top: 10px;
+
+    .pi {
+      margin-right: 5px;
+      font-size: 14px;
+    }
+  }
+
+  .btn-Signup:enabled:hover {
+    background-color: var(--green);
+    color: var(--white);
+  }
+
+  .btn-deconnecter {
+    background-color: var(--green);
+    border-radius: 5px;
+    line-height: 38px;
+    font-size: 16px;
+    height: 38px;
+    border: 0;
+    color: var(--white);
+    margin-top: 10px;
+    margin-right: 20px;
+
+    .fa-right-from-bracket {
+      margin-right: 5px;
+      width: 13px;
+    }
+  }
+
+  .btn-deactivate {
+    background-color: var(--green);
+    border-radius: 5px;
+    line-height: 38px;
+    font-size: 16px;
+    height: 38px;
+    width: 220px;
+    border: 0;
+    color: var(--white);
+    margin-top: 10px;
+    margin-right: 20px;
+  }
+
+  .delete {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+
+    .image-icon {
+      margin-right: 5px;
+      width: 15px;
+    }
+  }
+
+  .btn-Delete {
+    background-color: var(--white);
+    border-radius: 5px;
+    line-height: 38px;
+    font-size: 14px;
+    height: 38px;
+    border: 0;
+    font-size: 16px;
+    color: var(--green);
+    margin-top: 10px;
+    margin-right: 20px;
+    border: 1px solid var(--green);
+  }
+
+  .p-button:enabled:hover {
+    background: var(--green);
+    color: var(--white);
+    border-color: var(--green);
+  }
+
+  .btn-Delete:hover {
+    background-color: var(--white);
+    border-radius: 5px;
+    line-height: 38px;
+    font-size: 14px;
+    height: 38px;
+    border: 0;
+    font-size: 16px;
+    color: var(--green);
+    margin-top: 10px;
+    margin-right: 20px;
+    border: 1px solid var(--green);
+  }
+
+  .p-dropdown-panel {
+    background-color: var(--white);
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+.label {
+  color: var(--blue-2);
+  font-size: clamp(16px, 75%, 18px);
+  font-family: tommy_Regular;
+  margin-top: 20px;
+  margin-bottom: 13px;
+}
+
+.radio-buttons {
+  display: flex;
+  margin-bottom: 15px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.single-radio-button {
+  margin-right: 100px;
+}
+
+.address-group {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+
+.instructions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+::ng-deep .inputStyle {
+  color: var(--grey) !important;
+  box-shadow: none !important;
+  background-color: var(--white);
+  border-radius: 7px;
+  border-color: var(--grey);
+  width: 100%;
+}
+
+::ng-deep .inputStyle:hover {
+  max-width: 590px;
+  background-color: var(--white);
+  box-shadow: none !important;
+  border: 1px solid var(--green) !important;
+}
+
+::ng-deep .inputStyle:active {
+  max-width: 590px;
+  background-color: var(--white);
+  box-shadow: none !important;
+  border: 1px solid var(--green) !important;
+}
+
+::ng-deep .inputStyle:disabled {
+  width: 100%;
+  border: 1px solid var(--grey) !important;
+}
+
+::ng-deep .inputStyle {
+  color: var(--grey) !important;
+  box-shadow: none !important;
+  background-color: var(--white);
+  border-radius: 7px;
+  border-color: var(--grey);
+}
+
+::ng-deep .date {
+  display: flex !important;
+  color: var(--green);
+
+  input:enabled:active {
+    background: var(--green);
+    color: vvar(--grey);
+    border-color: var(--green);
+  }
+
+  input:enabled:hover {
+    background: var(--white);
+    color: var(--green);
+    border-color: var(--green);
+  }
+
+  input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    max-width: 590px;
+    background-color: var(--white);
+    box-shadow: none !important;
+    border-radius: 10px 0px 0px 10px;
+    border-color: #b3b3b3;
+    width: 100%;
+  }
+
+  button {
+    background-color: var(--green);
+    border-radius: 0px;
+  }
+
+  button:hover:active {
+    background-color: var(--green);
+    border-radius: 0px;
+  }
+
+  .p-button:enabled:hover {
+    background-color: var(--green);
+    color: #ffffff;
+    border-color: var(--green);
+  }
+
+  .p-element {
+    border-radius: 0px !important;
+  }
+}
+
+::ng-deep .noHover {
+  width: 100%;
+  border-radius: 7px;
+  background-color: var(--white);
+  background: transparent;
+  border: 1px solid var(--grey) !important;
+  touch-action: none;
+
+  .p-dropdown-label {
+    color: var(--grey);
+    font-size: 18px;
+    background-color: var(--white);
+    font-style: tommy_Regular;
+  }
+
+  .p-dropdown-panel .p-dropdown-items .p-dropdown-item.p-highlight {
+    color: var(--white);
+    background: var(--green);
+  }
+
+  .p-inputtext:hover {
+    max-width: 590px;
+    background-color: var(--white);
+    box-shadow: none !important;
+    border: 1px solid var(--red) !important;
+    width: 100%;
+  }
+
+  .p-dropdown-panel {
+    border-radius: 10px;
+    border: 1px solid var(--green) !important;
+  }
+
+  .p-dropdown-panel .p-dropdown-items .p-dropdown-item:not(.p-highlight):not(.p-disabled):hover {
+    color: var(--green);
+    background: var(--white);
+  }
+}
+
+.text-error {
+  color: var(--red);
+  font-size: clamp(12px, 75%, 15px);
+  font-family: tommy_Regular;
+  margin-bottom: 0px;
+  position: relative;
+  margin-top: 0px;
+}
+
+.text-error1 {
+  color: var(--red);
+  font-size: clamp(12px, 75%, 15px);
+  font-family: tommy_Regular;
+  margin-bottom: 0px;
+  position: absolute;
+  margin-top: 10px;
+}
+
+::ng-deep .password {
+  width: 100% !important;
+  background-color: var(--white);
+
+  input {
+    width: 100% !important;
+    background-color: var(--white);
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .instructions {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+  }
+
+  .single-radio-button {
+    margin-right: 100px;
+  }
+
+  .leftSide {
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    max-height: 100%;
+  }
+
+  .form {
+    // max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .title {
+    justify-content: center;
+    font-size: 18px;
+  }
+
+  .subtitle {
+    justify-content: center;
+  }
+
+  .rightSide {
+    margin-bottom: 20px;
+    margin-left: 0px;
+    width: 100%;
+  }
+
+  .image {
+    width: 133px;
+    height: 217px;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    margin: 0px;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .single-radio-button {
+    margin-right: 20px;
+  }
+
+  .image {
+    width: 90px;
+    height: 185px;
+  }
+
+  .para {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+  }
+
+  .buttons {
+    justify-content: flex-start;
+  }
+
+  .jamais {
+    font-size: 12px;
+    width: 90px;
+    height: 40px;
+    margin-left: 2px;
+  }
+
+  .prestataire {
+    width: 130px;
+    height: 40px;
+    font-size: 12px;
+  }
+
+  .titleText {
+    margin-top: 12px;
+  }
+
+  .merci {
+    font-size: 14px;
+  }
+
+  .leftSide {
+    width: 100%;
+  }
+
+  .delete {
+    display: flex;
+    flex-direction: column;
+  }
+}

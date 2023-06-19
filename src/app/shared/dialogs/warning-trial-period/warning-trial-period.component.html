@@ -1,0 +1,29 @@
+<div class="wrapper">
+    <div class="card">
+        <div class="">
+            <i (click)="close('warningTrialPeriodModal')"
+                class="flex flex-row-reverse fa-regular fa-circle-xmark"></i>
+        </div>
+
+        <div class="contents justify-content-center">
+            <div class="images">
+                <img class="image" src="/assets/images/doc card@2x.png" />
+            </div>
+            <div class="content">
+                <span class="titre">Dr. ben foulen <span class="smallTitleTxt">(médecin)</span></span>
+                <span class="discription">
+                    vous avez 7jrs de essai gratuit
+                </span>
+                <span class="blue-discription">
+                    vous devez vous abonner pour continuer votre travail
+                </span>
+                <div class="buttons">
+                    <button class="Continuer">Abonnez-vous</button>
+                    <button (click)="close('warningTrialPeriodModal')" class="Annuler">
+                        plus tard
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

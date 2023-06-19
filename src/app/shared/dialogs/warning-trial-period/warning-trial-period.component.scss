@@ -1,0 +1,117 @@
+.wrapper {
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    background-color: var(--white);
+    max-width: 450px;
+    // width: 100%;
+}
+
+.titre .smallTitleTxt{
+    font-family: tommy_Bold;
+    font-size: 15px;
+    color: var(--blue-2);
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.contents {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 15px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 32px;
+
+}
+
+.image {
+    max-width: 168px;
+    max-height: 194px;
+    // margin-left: 10px;
+    // margin-top: 42px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-left: -105px;
+    top: 20px;
+}
+
+.titre {
+    font-size: 20px;
+    font-family: tommy_Bold;
+    color: var(--blue-2);
+    margin-bottom: 10px;
+}
+
+.blue-discription {
+    font-family: tommy_Regular;
+    color: #0040FF;
+    font-size: 14px;
+    letter-spacing: 0.21px;
+    line-height: 25px;
+    max-width: 291px;
+    margin-bottom: 15px;
+}
+
+.discription {
+    font-family: tommy_Regular;
+    color: var(--blue-2);
+    font-size: 14px;
+    letter-spacing: 0.21px;
+    line-height: 25px;
+    max-width: 291px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.Continuer {
+    font-family: tommy_Regular;
+    background-color: var(--green);
+    width: 125px;
+    height: 40px;
+    font-size: 16px;
+    color: var(--blanc);
+    border-radius: 10px;
+    border-color: #e9e9e900 !important;
+    text-align: center;
+    align-items: center;
+
+}
+
+.Annuler {
+    font-family: tommy_Regular;
+    font-size: 16px;
+    background-color: var(--blanc);
+    width: 125px;
+    height: 40px;
+    color: var(--green);
+    border-radius: 10px;
+    border-color: var(--green) !important;
+    text-align: center;
+    align-items: center;
+    border-style: solid;
+    border-width: 1.5px;
+    margin-left: 15px;
+    background-color: var(--white);
+}
+
+::ng-deep {
+    .background {
+        background-color: var(--white) !important;
+    }
+}
+
+@media (max-width: 550px) {
+    .image {
+        display: none;
+    }
+}

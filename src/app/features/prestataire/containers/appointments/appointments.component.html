@@ -1,0 +1,19 @@
+
+<app-navbar></app-navbar>
+<div  style="margin-top: 150px" class="wrapper">
+
+    <div class="sections">
+
+        <div class="rendezVous" (click)="rendezVous()" [class.selected]="active">
+            Mes prochains rendez-vous
+
+        </div>
+        <div class="historique" (click)="historique()" [class.selected]="!active">
+            Mon historique
+        </div>
+    </div>
+    <div class="content">
+        <ng-template dynamicChildLoader=""></ng-template>
+    </div>
+
+</div>

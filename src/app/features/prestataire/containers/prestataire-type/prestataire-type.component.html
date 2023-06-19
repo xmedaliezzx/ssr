@@ -1,0 +1,18 @@
+<div class="wrapper">
+    <div style="width: 100%">
+      <div style="margin-left: 5px;">
+        <div style="margin-left: 5px;" (click)="back()" ><i class="fa-solid fa-caret-left"></i><span>Vous etes ?</span></div>
+      <div style="margin-left: 5px;" class="title">Créer votre compte</div>
+      <div  style="margin-left: 5px;" class="subtitle">
+          <div>
+              <p class="text">Avez vous déjà un compte? &nbsp;</p>
+          </div>
+          <div><a  class="link"  (click)="connecter()">Se connecter</a></div>
+      </div>
+      
+
+      <app-form [dynamicform]="signUpForm"></app-form>
+     <div><button class="button">S'inscrire</button></div>
+    </div>
+  
+  </div>

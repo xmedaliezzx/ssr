@@ -1,0 +1,29 @@
+<div class="wrapper">
+    <div class="card">
+      <div class="">
+        <i
+          (click)="close('BlockedAppointmentModal')"
+          class="flex flex-row-reverse fa-regular fa-circle-xmark"
+        ></i>
+      </div>
+  
+      <div class="contents justify-content-evenly">
+        <div  class="content ">
+            <span class=" titre">Oups !</span>
+          <div class="discription">
+            <span >Vous ne serez plus en mesure d'avoir un autre rendez-vous pendant  </span><span class="heure">une heure</span>
+          </div>
+          <div class="button"> <button >Okay</button></div> 
+          </div>
+ 
+        <div class="inside ">
+            <div class="lottie">
+                <div class="">
+                  <ng-lottie [options]="options"></ng-lottie>
+                </div>
+              </div>
+      </div>
+    </div>
+  </div>
+  
+

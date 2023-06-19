@@ -1,0 +1,200 @@
+<nav>
+  <div class="navbar">
+    <div class="logo">
+      <img src="/assets/icons/logo.svg" />
+    </div>
+    <div class="menu" [ngClass]="(language | async) == 'ar' ? 'mr-a' : 'ml-a'">
+      <a *ngIf="activeInterface =='PATIENT' " class="nav-link" [routerLink]="['/home']" routerLinkActive="active">{{
+        "SHARED.NAVBAR.HOME" | translate
+      }}</a>
+     
+        <a *ngIf="isAthenticated && activeInterface =='PRESTATAIRE' " class="nav-link" [routerLink]="['/dashboard']" routerLinkActive="active">Tableau de bord</a>
+      <a
+        class="nav-link"
+        [routerLink]="['/my-appointment']"
+        routerLinkActive="active"
+        *ngIf="isAthenticated && activeInterface =='PATIENT'"
+        >{{ "SHARED.NAVBAR.RDV" | translate }}</a
+      >
+     
+      <a
+        *ngIf="isAthenticated && activeInterface =='PRESTATAIRE' "
+        class="nav-link"
+        [routerLink]="['/appelsimmediats']"
+        routerLinkActive="active"
+        >Appels immédiats</a
+      >
+      <a
+      *ngIf="isAthenticated && activeInterface =='PRESTATAIRE' "
+      class="nav-link"
+      [routerLink]="['/prestataireAppointments']"
+      routerLinkActive="active"
+      >Rendez-vous</a
+    >
+      <a
+        *ngIf="isAthenticated && activeInterface =='PRESTATAIRE'"
+        class="nav-link"
+        [routerLink]="['/pricesStatistics']"
+        routerLinkActive="active"
+        >Prix et statistiques</a
+      >
+      <a
+        class="nav-link"
+        *ngIf="activeInterface =='PATIENT'"
+        [routerLink]="['/list_healthcare']"
+        routerLinkActive="active"
+        >{{ "SHARED.NAVBAR.SERVICES" | translate }}</a
+      >
+      <div
+        class="nav-link"
+        *ngIf="!isAthenticated"
+        routerLinkActive="active"
+        style="display: flex; align-items: start"
+      >
+     
+        <div class="help">{{ "SHARED.NAVBAR.HELP" | translate }}</div>
+        <div><i class="fa-regular fa-circle-question"></i></div>
+      </div>
+      <div>
+        <app-switch-account></app-switch-account>
+      </div>
+      <div
+        *ngIf="isAthenticated && activeInterface =='PATIENT'"
+        class="nav-link help"
+        [routerLink]="['/profile']"
+        routerLinkActive="active"
+        style="display: flex; align-items: center"
+      >
+        {{ "Mon Profil" | translate }}
+        <p-avatar
+          image="/assets/icons/profile.png"
+          styleClass="ml-2"
+          size="large"
+          shape="circle"
+        ></p-avatar>
+      </div>
+
+      <div
+      *ngIf="isAthenticated && activeInterface =='PRESTATAIRE'"
+      class="nav-link help"
+      [routerLink]="['/profile']"
+      routerLinkActive="active"
+      style="display: flex; align-items: center"
+    >
+      {{ "Espace prestataire" | translate }}
+      <p-avatar
+        image="/assets/icons/profile.png"
+        styleClass="ml-2"
+        size="large"
+        shape="circle"
+      ></p-avatar>
+    </div>
+  
+      <button
+        *ngIf="!isAthenticated"
+        [routerLink]="['/auth/signin']"
+        routerLinkActive="btn-active"
+      >
+        {{ "SHARED.NAVBAR.LOGIN" | translate }}
+      </button>
+      <button
+        *ngIf="!isAthenticated"
+        [routerLink]="['/auth/user-type']"
+        routerLinkActive="btn-active"
+      >
+        {{ "SHARED.NAVBAR.REGISTER" | translate }}
+      </button>
+    </div>
+
+    <div
+      class="menu-responsive"
+      [ngClass]="(language | async) == 'ar' ? 'mr-a' : 'ml-a'"
+    >
+      <div class="profile">
+        <p-avatar
+          *ngIf="isAthenticated"
+          [routerLink]="['/profile']"
+          image="/assets/icons/profile.png"
+          size="large"
+          shape="circle"
+        ></p-avatar>
+      </div>
+      <div><i (click)="menu = true" class="fa-solid fa-bars"></i></div>
+      <!-- <div *ngIf="menu" class="nav-menu">
+      <a class="nav-responsive">Acceuil</a>
+      <a class="nav-responsive">Mes Rendez-Vous</a>
+      <a class="nav-responsive">Categories</a>
+      <a class="nav-responsive"
+        >Aide
+        <i class="fa-regular fa-circle-question responsive"></i>
+      </a>
+      <button class="responsive-button">Se Connecter</button>
+    </div> -->
+    </div>
+  </div>
+</nav>
+
+<div class="card flex flex-wrap justify-content-center gap-2">
+  <p-sidebar [(visible)]="menu" position="right">
+    <div class="sidebar-container">
+      <a class="nav-link" [routerLink]="['/home']" routerLinkActive="active"
+        >Acceuil</a
+      >
+
+      <a
+      class="nav-link"
+      [routerLink]="['/my-appointment']"
+      routerLinkActive="active"
+      *ngIf="isAthenticated"
+      >{{ "SHARED.NAVBAR.RDV" | translate }}</a
+    >
+
+      <a class="nav-link">Nos services</a>
+      <a
+        *ngIf="user.role == 'user'"
+        class="nav-link"
+        [routerLink]="['/prestataireAppointments']"
+        routerLinkActive="active"
+        >Rendez-vous (prestataire)</a
+      >
+      <a
+        *ngIf="user.role == 'user'"
+        class="nav-link"
+        [routerLink]="['/appelsimmediats']"
+        routerLinkActive="active"
+        >Appels immédiats</a
+      >
+      <a
+        *ngIf="user.role == 'user'"
+        class="nav-link"
+        [routerLink]="['/pricesStatistics']"
+        routerLinkActive="active"
+        >Prix et statistiques</a
+      >
+      <a
+        class="nav-link"
+        [routerLink]="['/list_healthcare']"
+        routerLinkActive="active"
+        >{{ "SHARED.NAVBAR.SERVICES" | translate }}</a
+      >
+      <div class="nav-link" style="display: flex; align-items: start">
+        <div>Aide</div>
+        <div><i class="fa-regular fa-circle-question"></i></div>
+      </div>
+      <button
+        *ngIf="!isAthenticated"
+        [routerLink]="['/auth/signin']"
+        routerLinkActive="btn-active"
+      >
+        Se Connecter
+      </button>
+      <button
+        *ngIf="!isAthenticated"
+        [routerLink]="['/auth/user-type']"
+        routerLinkActive="btn-active"
+      >
+        Register
+      </button>
+    </div>
+  </p-sidebar>
+</div>

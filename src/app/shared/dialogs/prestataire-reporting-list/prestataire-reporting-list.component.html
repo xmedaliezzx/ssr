@@ -1,0 +1,49 @@
+<div class="wrapper">
+  <div class="card">
+    <div class="">
+      <i (click)="close('prestataireReportingListModal')" class="flex flex-row-reverse fa-regular fa-circle-xmark"></i>
+    </div>
+
+    <div >
+      <div>
+        <div class="flex p-3 flex-column justify-content-start">
+          <div class="content flex flex-column justify-content-start">
+            <span class="titre">Veuillez sélectionner une raison</span>
+            <div class="radioButton m-1">
+              <p-radioButton value="harcelement" [(ngModel)]="checked" styleClass="checkradioButton"
+                inputId="ingredient1"></p-radioButton>
+              <label class="labels">Harcélement</label>
+            </div>
+            <div class="radioButton m-1">
+              <p-radioButton value="fraude" styleClass="checkradioButton" [(ngModel)]="checked"
+                inputId="ingredient2"></p-radioButton>
+              <label class="labels">Fraude</label>
+            </div>
+            <div class="radioButton m-1">
+              <p-radioButton styleClass="checkradioButton" value="wrongInformations" [(ngModel)]="checked"
+                inputId="ingredient3"></p-radioButton>
+              <label class="labels">Informations erronées sur le type de soins</label>
+            </div>
+            <div class="radioButton m-1">
+              <p-radioButton value="Autre" styleClass="checkradioButton" [(ngModel)]="checked"
+                inputId="ingredient6"></p-radioButton>
+              <label class="labels">Autre, veuillez expliquer davantage :</label>
+            </div>
+            <div style="display: flex; justify-content: center;">
+              <textarea class="paragraph_text" pInputTextarea cols="20" rows="3" autoResize='false' ></textarea>
+            </div>
+          </div>
+          <div class="buttons">
+            <button class="Continuer flex justify-content-center">
+              Signaler
+            </button>
+            <button (click)="close('prestataireReportingListModal')" class="Annuler flex justify-content-center">
+              Annuler
+            </button>
+          </div>
+        </div>
+      </div>
+      <div></div>
+    </div>
+  </div>
+</div>

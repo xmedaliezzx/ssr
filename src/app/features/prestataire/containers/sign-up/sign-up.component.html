@@ -1,0 +1,13 @@
+<div class="container">
+ 
+
+  <div class="grid-btn">
+    <p class="titre">{{ "SHARED.VOUSETES.VOUSETES_TITLE" | translate }}</p>
+
+    <div *ngFor="let item of types">
+      <button class="btn" (click)="chooseType(item.value)">
+        {{ item.name }}
+      </button>
+    </div>
+  </div>
+</div>

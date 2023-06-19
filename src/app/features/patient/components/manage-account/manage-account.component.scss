@@ -1,0 +1,136 @@
+.title {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    color: #2E3C66;
+    font-family: buttershine;
+}
+
+::ng-deep {
+
+    .delete {
+        display: flex;
+        flex-direction: row;
+       // align-items: baseline;
+        margin-bottom: 5px;
+
+        .image-icon {
+            margin-right: 5px;
+            width: 15px;
+        }
+    }
+
+    .btn-Delete {
+        background-color: var(--white);
+        border-radius: 5px;
+        line-height: 38px;
+        font-size: 14px;
+        height: 38px;
+        border: 0;
+        font-size: 16px;
+        color: var(--green);
+        margin-top: 10px;
+        margin-right: 20px;
+        border: 1px solid var(--green);
+    }
+
+    .p-button:enabled:hover {
+        background: var(--green);
+        color: var(--white);
+        border-color: var(--green);
+    }
+    // .p-button:enabled {
+    //         background: var(--green);
+    //         color : var(--white);
+    //         border-color: var(--green);
+    //     }
+
+    .btn-Delete:hover {
+        background-color: var(--white);
+        border-radius: 5px;
+        line-height: 38px;
+        font-size: 14px;
+        height: 38px;
+        border: 0;
+        font-size: 16px;
+        color: var(--green);
+        margin-top: 10px;
+        margin-right: 20px;
+        border: 1px solid var(--green);
+    }
+
+    .btn-deactivate {
+        background-color: var(--green);
+        border-radius: 5px;
+        line-height: 38px;
+        font-size: 16px;
+        height: 38px;
+        width: 220px;
+        border: 0;
+        color: var(--white);
+        margin-top: 10px;
+        margin-right: 20px;
+    }
+
+    .content {
+        background: transparent !important;
+        border: none !important;
+    }
+
+    .bigSection {
+        font-size: 20px !important;
+        color: #2E3C66 !important;
+        font-family: tommy_Bold;
+        margin-top: 30px;
+        margin-bottom: 15px;
+
+
+    }
+
+    .smallSection {
+        font-family: tommy_Regular !important;
+        font-size: 18px !important;
+        color: #2E3C66 !important;
+        margin-top: 15px !important;
+        margin-bottom: 15px !important;
+        background: transparent !important;
+        border: none !important;
+        font-weight: 100 !important;
+        padding: 0 !important;
+
+    }
+}
+
+hr {
+    width: 50%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-inline-start: initial;
+    color: #707070;
+    // display: flex;
+
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.profil {
+    font-size: 18px;
+    color: #2A8F9B;
+    font-family: tommy_Regular;
+}
+
+
+::ng-deep {
+    .p-accordion .p-accordion-header .p-accordion-header-link .p-accordion-toggle-icon {
+        margin-left: 0.5rem;
+    }
+
+
+    .p-accordion-toggle-icon {
+        order: 1 !important;
+    }
+}

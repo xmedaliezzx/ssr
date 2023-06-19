@@ -1,0 +1,51 @@
+<div class="wrapper">
+  <div class="header">
+    <div class="title">La liste des rendez-vous</div>
+  </div>
+  <div class="boxs">
+    <div *ngFor="let item of rdvData">
+      <div class="box1">
+        <div class="profilePhoto">
+          <img class="imageprofile" src="{{ item.image }}" />
+        </div>
+        <div class="info">
+          <div class="flex">
+            <div>
+              <div class="name">
+                {{ item.name }}
+              </div>
+              <div class="details">
+                <div>
+                  <div class="date">
+                    <img
+                      class="dateimage"
+                      src="../../../../../assets/icons/calendar.svg"
+                    />
+                    {{ item.startDate }}
+                  </div>
+                </div>
+                <div class="time">
+                  <img
+                    style="width: 15px; margin-right: 8px"
+                    src="../../../../../assets/icons/time.svg"
+                  />
+                  {{ item.startTime }}
+                </div>
+              </div>
+
+              <div class="empl">
+                <img
+                  class="timeimage"
+                  src="../../../../../assets/icons/loc.svg"
+                />
+                <div>
+                  Appartement numéro 2 Immeuble kadha kadh, rue arafet Sousse
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

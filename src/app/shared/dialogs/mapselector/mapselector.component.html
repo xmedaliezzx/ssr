@@ -1,0 +1,14 @@
+<div class="map-containers">
+  <!-- <div>
+    <i (click)="close('mapselectorComponentModal')" class="flex flex-row-reverse fa-regular fa-circle-xmark"></i>
+  </div> -->
+  <!-- <i class="pi pi-times center-icon"></i> -->
+  <google-map #map height="40vh" [options]="mapOptions" width="100%" [center]="center" [zoom]="zoom"
+    (mapClick)="addMarker($event)" (centerChanged)="getCenterPosition($event)">
+    <map-marker [position]="markerPositions" [options]="markerOptions"></map-marker>
+  </google-map>
+  <div style="display: flex;justify-content:flex-end; margin:0.2rem">
+    <p-button label="Confirmer" styleClass="p-button-success"></p-button>
+    <p-button label="Fermer" (click)="close('mapselectorComponentModal')" styleClass="p-button-help"></p-button>
+  </div>
+</div>

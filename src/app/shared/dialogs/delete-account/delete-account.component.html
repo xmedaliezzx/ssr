@@ -1,0 +1,41 @@
+<div class="wrapper">
+  <div class="card">
+
+
+    <div class="reasons flex justify-content-evenly">
+      <div class="title">
+        Supprimer définitivement le compte
+      </div>
+      <div class="bigTitle">
+        Nous sommes navrés de vous voir partir
+      </div>
+    
+     <div class="text">Si vous devez vous séparer pour un certain temps, vous pouvez <span style="color: #1B8793;"> désactiver votre compte temporairement</span></div>
+      <div class="delete" style="display: flex; flex-direction: column; width: 100%;">
+        <p-button type="submit"  styleClass="btn-Deactivate1" (click)="deactivate()"  >
+          Désactiver le compte</p-button>
+        <p-button type="submit" (click)="onSubmit()" styleClass="btn-Delete1">Supprimer le compte</p-button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- <p-dialog
+  header="Header"
+  contentStyleClass="background p-2"
+  [showHeader]="false"
+  [style]="{ width:'100%', maxWidth:  '550px'}"
+  *ngIf="deactivationConfirmationModal"
+  [(visible)]="deactivationConfirmationModal"
+  [modal]="true"
+  [draggable]="false"
+  [resizable]="false"
+  (onHide)="close('deactivationConfirmationModal')"
+>
+  <app-deactivation-confirmation></app-deactivation-confirmation>
+</p-dialog> -->

@@ -1,0 +1,175 @@
+<div class="gap-3 mt-3 wrapper">
+  <p>Informations du patient</p>
+  <div class="radioButtons">
+    <div class="patientMoi">
+      <p-radioButton
+        (ngModelChange)="patienType('patientMoi')"
+        name="patient"
+        value="patientMoi"
+        [(ngModel)]="patient"
+        inputId="me"
+      ></p-radioButton>
+      <label for="me" class="radioButton ml-2">Pour Moi meme</label>
+    </div>
+    <div class="patientautre">
+      <p-radioButton
+        (ngModelChange)="patienType('patientautre')"
+        name="patient"
+        value="patientautre"
+        [(ngModel)]="patient"
+        inputId="other"
+      ></p-radioButton>
+      <label for="other" class="radioButton ml-2">Pour un autre membre</label>
+    </div>
+  </div>
+
+  <div class="dropdown" *ngIf="patient === 'patientautre'">
+    <p-dropdown
+      [options]="autre_patient"
+      value="autre_patient"
+      (onChange)="selectFamilymember()"
+      [(ngModel)]="dropdown"
+      optionLabel="fullname"
+      [showClear]="true"
+      placeholder="Choose member"
+    ></p-dropdown>
+  </div>
+
+  <form class="form" [formGroup]="PersoInfoForm">
+    <div class="inputs">
+      <div class="right">
+        <label class="label" htmlFor="username">Nom</label>
+        <input
+          pInputText
+          id="username"
+          class="input"
+          formControlName="firstname"
+        />
+
+        <label class="label" htmlFor="username">Prénom</label>
+        <input
+          pInputText
+          id="username"
+          class="input"
+          formControlName="lastname"
+          [disabled]="disableInput"
+        />
+        <label class="label">Date de naissance</label>
+        <p-calendar
+          id="disabled-input"
+          [(ngModel)]="date"
+          formControlName="birthDate"
+          [disabled]="disableInput"
+        >
+        </p-calendar>
+
+        <label class="label" htmlFor="username">Numero de téléphone</label>
+        <input
+          pInputText
+          id="username"
+          formControlName="phoneNumber"
+          class="input"
+          aria-describedby="username-help"
+          [disabled]="disableInput"
+        />
+      </div>
+
+      <div class="left">
+        <label class="label" htmlFor="username">Addresse</label>
+        <input
+          pInputText
+          id="username"
+          formControlName="address"
+          class="input"
+          aria-describedby="username-help"
+          [disabled]="disableInput"
+        />
+
+        <label class="label"  htmlFor="username">Ville</label>
+        <input                
+          pInputText
+          id="username"
+          formControlName="city"
+          class="input"
+          aria-describedby="username-help"
+          [disabled]="true"
+        />
+        <div *ngIf="!show">
+          
+          <div class="dropdown">
+            <label class="label" htmlFor="username"
+              >Choix du professionnel
+            </label>
+            <p-dropdown
+              value="choix"
+              value="choix"
+              
+              optionLabel="fullname"
+            ></p-dropdown>
+            <label  class="label">Avez-vous une ordonnane les soins demandés ?
+
+            </label>
+            <div class="radioButtons">
+              <div class="patientMoi"   (click)="choixmy('oui')">
+                <p-radioButton
+              
+                  name="ouiChoix"
+                  value="oui"
+                  formControlName="ouiChoix"
+                  inputId="oui"
+                ></p-radioButton>
+                <label for="oui" class="radioButton ml-2">oui</label>
+              </div>
+              <div class="patientautre"  (click)="choixmy('non')">
+                <p-radioButton
+                  name="ouiChoix"
+                  value="non"
+                 
+                  formControlName="ouiChoix"
+                  inputId="non"
+                ></p-radioButton>
+                <label for="non" class="radioButton ml-2">non</label>
+              </div>
+            </div>
+            <div *ngIf="PersoInfoForm.controls['ouiChoix'].value === 'oui'">
+              <p-fileUpload
+                #cutomUpload
+                mode="basic"
+                [styleClass]="'customUpload'"
+                name="demo[]"
+                chooseLabel="Ajouter l ordonnance"
+                [uploadIcon]="'pi pi-delete-left'"
+                [uploadLabel]="''"
+                [customUpload]="true"
+                [chooseIcon]="'pi pi-plus'"
+                [maxFileSize]="10000000000"
+              ></p-fileUpload>
+              <span style="font-family: tommy_Regular; font-size: 12px; margin-bottom: 10px;">Document au format JPG, PNG ou PDF, Max 6 Mo</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mycheckbox">
+          <p-checkbox
+           
+            value="position"
+            inputId="ny"
+          ></p-checkbox>
+          <label class="position" for="ny"
+            >Position actuelle (active geo)</label
+          >
+        </div>
+        <div class="mycheckbox">
+          <p-checkbox
+            formControlName="condition"
+            value="condition"
+            inputId="ny"
+          ></p-checkbox>
+          <label class="position" for="ny"
+            >je reconnais avoir lu les condition general et accepte</label
+          >
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

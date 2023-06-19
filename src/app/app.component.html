@@ -1,0 +1,11 @@
+<!-- <app-navbar></app-navbar> -->
+<div style="height: 100%;">
+  <router-outlet></router-outlet>
+  <app-dialog-manager></app-dialog-manager>
+  <div>
+    <app-loading *ngIf="isAppLoading$$ | async"></app-loading>
+  </div>
+</div>
+
+<!-- <router-outlet></router-outlet> -->
+<p-toast></p-toast>

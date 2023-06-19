@@ -1,0 +1,122 @@
+/* You can add global styles to this file, and also import other style files */
+@import "primeng/resources/themes/fluent-light/theme.css";
+@import "primeflex/primeflex.css";
+@import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
+
+:root {
+  --black: #000000;
+  --blue: #003ef8;
+  --grey: #B3B3B3;
+  --blueCheck: #0040ff;
+  --blue-2: #2e3c66;
+  --blue-3 : #D8E3E9;
+  --green: #1b8793;
+  --green2 :#00BC00;
+  --green-light: #b1d9dc;
+  --white: #f1fbfc;
+  --blanc: #ffffff;
+  --grisBorder: #b3b3b3;
+  --gradient: linear-gradient(
+    90deg,
+    rgba(241, 251, 252, 1) 0%,
+    rgba(27, 135, 147, 1) 50%,
+    rgba(46, 60, 102, 1) 100%
+  );
+  --gris: #707070;
+  --black2:#1D1D29
+}
+
+@font-face {
+  font-family: buttershine;
+  src: url(assets/fonts/BUTTERSHINE_SERIF.otf) format("opentype");
+}
+
+@font-face {
+  font-family: tommy_black;
+  src: url(assets/fonts/Black.otf) format("opentype");
+}
+
+@font-face {
+  font-family: tommy_Black_Outline;
+  src: url(assets/fonts/Black_Outline.otf) format("opentype");
+}
+@font-face {
+  font-family: tommy_Bold;
+  src: url(assets/fonts/Bold.otf) format("opentype");
+}
+@font-face {
+  font-family: tommy_Bold_Outline;
+  src: url(assets/fonts/Bold_Outline.otf) format("opentype");
+}
+@font-face {
+  font-family: tommy_ExtraBold;
+  src: url(assets/fonts/ExtraBold.otf) format("opentype");
+}
+@font-face {
+  font-family: tommy_ExtraBold_Outline;
+  src: url(assets/fonts/ExtraBold_Outline.otf) format("opentype");
+}
+@font-face {
+  font-family: tommy_Light;
+  src: url(assets/fonts/Light.otf) format("opentype");
+}
+@font-face {
+  font-family: tommy_Medium;
+  src: url(assets/fonts/Medium.otf) format("opentype");
+}
+@font-face {
+  font-family: tommy_Medium_Outline;
+  src: url(assets/fonts/Medium_Outline.otf) format("opentype");
+}
+@font-face {
+  font-family: tommy_Outline;
+  src: url(assets/fonts/Outline.otf) format("opentype");
+}
+@font-face {
+  font-family: tommy_Regular;
+  src: url(assets/fonts/Regular.otf) format("opentype");
+}
+@font-face {
+  font-family: tommy_Regular_Outline;
+  src: url(assets/fonts/Regular_Outline.otf) format("opentype");
+}
+@font-face {
+  font-family: tommy_Thin;
+  src: url(assets/fonts/Thin.otf) format("opentype");
+}
+@font-face {
+  font-family: tommy_Thin_Outline;
+  src: url(assets/fonts/Thin_Outline.otf) format("opentype");
+}
+
+* {
+ //outline: 1px solid limegreen !important;
+  box-shadow: none !important;
+}
+html {
+  background-color: #f1fbfc;
+  height: 100%;
+  margin : 0 !important;
+  padding : 0 !important;
+}
+body {
+  height: 100%;
+  margin : 0 !important;
+  padding : 0 !important;
+}
+.mr-a {
+  margin-right: auto !important;
+}
+.ml-a {
+  margin-left: auto !important;
+}
+.txt-center {
+  text-align: center !important;
+}
+.txt-right {
+  text-align: right !important;
+}
+.txt-left {
+  text-align: left !important;
+}

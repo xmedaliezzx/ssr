@@ -1,0 +1,41 @@
+<div class="wrapper">
+    <div class="title">
+        Disponibilités
+    </div>
+    <div class="form">
+        <div class="right">
+            <label>Avez-vous une ordonance pour les soins demandés?</label>
+            <div class="box">
+                <div class=" radiobtn flex align-items-center">
+                    <p-radioButton name="pizza" value="Cheese" [(ngModel)]="ingredient" inputId="ingredient1"></p-radioButton>
+                    <label for="ingredient1" class="choice ml-2">Oui</label>
+                </div>
+        
+                <div class="radiobtn flex align-items-center">
+                    <p-radioButton name="pizza" value="Mushroom" [(ngModel)]="ingredient" inputId="ingredient2"></p-radioButton>
+                    <label for="ingredient2" class="choice ml-2">Non</label>
+                </div>
+            </div>
+            
+        <label>Date</label>
+        <p-calendar [(ngModel)]="date" [numberOfMonths]="2" placeholder="Période">
+            <ng-template pTemplate="date" let-date>
+                <span [ngStyle]="{textDecoration: (date.day < 21 && date.day > 10) ? 'line-through' : 'inherit'}">{{date.day}}</span>
+            </ng-template>
+        </p-calendar>
+        <label>Disponibilités horaires du patient *</label>
+        <p-dropdown [options]="hours" [(ngModel)]="selectedhour" ></p-dropdown>
+        <label>Lieu de soin</label>
+        <p-dropdown [options]="places" [(ngModel)]="selectedplace" ></p-dropdown>
+    </div>
+    <div class="left">
+        <label>Choix du professionnel</label>
+        <p-dropdown [options]="gender" [(ngModel)]="selectedgender" ></p-dropdown>
+
+ 
+
+    
+    </div>
+    </div>
+</div>
+

@@ -1,0 +1,15 @@
+::ng-deep .p-inputtext {
+    max-width: 590px;
+    background-color: var(--white);
+   
+    box-shadow: none !important;
+    border-radius: 7px;
+    border-color: #B3B3B3;
+    width: 100%;
+}
+::ng-deep .p-inputtext:focus {
+    max-width: 590px;
+    background-color: var(--white);
+    box-shadow: none !important;
+    border: 1px solid var(--green) !important;
+}

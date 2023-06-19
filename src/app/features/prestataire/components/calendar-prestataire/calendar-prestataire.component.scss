@@ -1,0 +1,100 @@
+.wrapper{
+    width:100%;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+   
+}
+
+.title{
+    font-size:19px;
+    color: #2E3C66;
+    font-family: buttershine;
+   
+}
+.link{
+    font-size: 16px;
+    color: #1B8793;
+    font-family: tommy_Regular;
+    
+}
+
+
+::ng-deep .calendar{
+    .p-calendar {
+        position: relative;
+        display: inline-flex;
+        max-width: 100%;
+        width: 100%;
+        
+    }
+    .box-calendar{
+        
+    padding: 0.75rem;
+    background: #ffffff;
+    box-shadow: 0px 3px 6px #00000029 !important;
+    color: #323130;
+  
+    border-radius: 11px; 
+   
+
+    .p-datepicker{
+        border: 0; 
+        color: #2E3C66;
+        font-family: tommy_Regular;
+        font-size: 17px;
+    }
+
+    .p-datepicker table td.p-datepicker-today > span{
+        background: #1B8793 !important;
+        border-radius: 50% !important;
+        
+}
+
+.p-datepicker:not(.p-disabled) table td span:not(.p-highlight):not(.p-disabled):hover {
+    background: #f3f2f1;
+    border-radius: 50% !important;
+}
+.p-datepicker table td > span.p-highlight {
+    color: #323130;
+    background: #edebe9;
+    border-radius: 50% !important;
+}
+
+.p-datepicker .p-datepicker-header .p-datepicker-title .p-datepicker-year, .p-datepicker .p-datepicker-header .p-datepicker-title .p-datepicker-month {
+    color: #2E3C66;
+    font-family: tommy_Bold;
+   
+}
+
+.p-datepicker .p-datepicker-header {
+    border-bottom: 0.5px solid #B3B3B3;
+}
+
+
+
+
+}
+
+}
+
+.footer{
+    background-color: #DDDFE6;
+    width: 100%;
+}
+
+.event{
+    font-size: 15px;
+    font-family: tommy_Regular;
+}
+
+.date{
+    display: flex;
+    justify-content: space-between
+}
+.soins{
+    display: flex;
+}

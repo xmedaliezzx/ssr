@@ -1,0 +1,38 @@
+<app-navbar></app-navbar>
+
+<div class="wapper">
+
+  <div class="contentTop">
+    <div class="leftSide">
+     
+        <app-prix></app-prix>
+     
+    </div>
+    <div class="rightSide">
+      <div class="TopSide">
+        <div class="left">
+          <p class="title">Statistiques</p>
+          <div class="statistiques flex flex-row">
+            <app-statistics-week></app-statistics-week>
+            <app-statistics-month></app-statistics-month>
+          </div>
+        </div>
+        <div class="right">
+          <p class="title">Les Revenues</p>
+          <app-revenues></app-revenues>
+        </div>
+      </div>
+      <div class="BottomSide">
+        <app-general-statistics></app-general-statistics>
+      </div>
+    </div>
+  </div>
+  <div class="contentBottom">
+    <div class="contentBottomLeft">
+      <app-revenue-statistics-day></app-revenue-statistics-day>
+    </div>
+    <div class="contentBottomRight">
+      <app-revenue-statistics-month></app-revenue-statistics-month>
+    </div>
+  </div>
+</div>

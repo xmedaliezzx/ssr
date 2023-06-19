@@ -1,0 +1,70 @@
+.wrapper {
+    padding-top: 87px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    margin-top: 15%;
+    font-family: buttershine;
+    font-size: clamp(20px, 4vw, 30px);
+    color: #2E3C66;
+    text-align: left;
+    line-height: clamp(2rem, 4vw, 4rem);
+    margin-bottom: 26px;
+}
+
+.btns {
+    margin-top: 15px;
+    display: flex;
+
+}
+
+
+.suivant-btn {
+    background-color: var(--green);
+    border-radius: 5px;
+    width: 123px;
+    height: 38px;
+    border: 0;
+    color: var(--white);
+    margin-left: 20px;
+}
+
+.annuler-btn {
+    background-color: transparent;
+    border-radius: 5px;
+    width: 123px;
+    height: 38px;
+    border: 2px solid;
+    border-color: var(--green);
+    color: var(--green);
+
+}
+
+::ng-deep{ .progressBar {
+    .p-progressbar {
+        height: 11px;
+        width: 100%;
+        border-radius: 4px;
+        background: #F2F2F2;
+    }
+
+    .p-progressbar .p-progressbar-label {
+        display: none !important;
+    }
+
+    .p-progressbar .p-progressbar-value {
+        background: var(--gradient);
+        border-radius: 0 4px 4px 0;
+    }
+
+}
+.p-calendar .p-inputtext {
+    flex: 1 1 auto;
+    width: 100%;
+    max-width: 590px;
+}
+}

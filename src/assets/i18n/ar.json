@@ -1,0 +1,103 @@
+{
+  "Soins Spéciaux": "رعاية خاصة",
+  "Et Meilleur Traitements": "وأفضل العلاجات",
+  "AUTH_FEATURES": {
+    "SIGNIN": {
+      "TITLE": "تسجيل الدخول",
+      "EMAIL_REQUIRED": "البريد الإلكتروني مطلوب",
+      "EMAIL_NOT_VALID": "البريد الالكتروني غير صحيح",
+      "PASSWORD_REQUIRED": "كلمة المرور مطلوبة",
+      "SIGNIN_BUTTON": "تسجيل الدخول",
+      "PASSWORD_LENGTH": "يجب أن تكون كلمة المرور أطول من 6 أحرف",
+      "STAY_CONNECTED": "ابق على اتصال",
+      "FORGOT_PASSWORD": "هل نسيت كلمة المرور؟",
+      "DONT_HAVE_ACCOUNT": "ليس لديك حساب",
+      "SIGNUP": "تسجيل",
+      "SIGN_IN": "تسجيل الدخول",
+      "SIGN_IN_SUCCESS": "تسجيل الدخول"
+    },
+    "SIGNUP": {
+      "TITLE": "Créer votre compte",
+      "EMAIL_REQUIRED": "Email is required",
+      "PASSWORD_REQUIRED": "Mot de passe is required",
+      "SIGNIN_BUTTON": "Se connecter",
+      "PASSWORD_LENGTH": "Password must be longer than 4 characters",
+      "STAY_CONNECTED": "Stay connected",
+      "FORGOT_PASSWORD": "Forgot your password?",
+      "DONT_HAVE_ACCOUNT": "You do not have an account",
+      "SIGNUP": "Signup",
+      "SIGN_UP_SUCCESS": "تسجيل الدخول"
+    }
+  },
+  "SHARED": {
+    "EMAIL": "Email",
+    "PASSWORD": "Mot de passe",
+    "NAVBAR": {
+      "HOME": "الصفحة الرئيسية",
+      "RDV": "المواعيد",
+      "SERVICES": "الخدمات",
+      "HELP": "المساعدة",
+      "DASHBOARD": "لوحة القيادة",
+      "LOGIN": "تسجيل الدخول",
+      "LOGOUT": "تسجيل الخروج",
+      "REGISTER": "التسجيل",
+      "PROFILE": "الملف الشخصي"
+    },
+    "ERRORS": {
+      "EMAIL_REQUIRED": "البريد الالكتروني مطلوب",
+      "EMAIL_INVALID": "البريد الالكتروني غير صحيح",
+      "PASSWORD_REQUIRED": "كلمة المرور مطلوبة",
+      "PASSWORD_LENGTH_ERR": "يجب أن تكون كلمة المرور أطول من 6 أحرف",
+      "CONFIRM_PASSWORD_REQUIRED": "مطلوب تأكيد كلمة المرور",
+      "CONFIRM_PASSWORD_LENGTH_ERR": "يجب أن يكون تأكيد كلمة المرور أطول من 6 أحرف",
+      "PASSWORD_MATCH_ERR": "كلمة المرور غير مطابقة"
+    },
+    "VOUSETES":{
+      "VOUSETES_TITLE" :"",
+      "PARAMEDICAL":"",
+      "MEDECINS":"",
+      "TRANSPORT_MEDICAL":"",
+      "RETIREMENT_HOME" :"",
+      "PARAPHARMACIE":"",  
+        "LABORATOIRES":"",
+        "BABY_SITTING" :"",
+       "POMP_FUNÈBRE":""
+    }
+  },
+  "RESET_PASSWORD_FEATURES": {
+    "CHECK_INBOX": {
+      "TITLE": "تحقق من البريد الوارد الخاص بك",
+      "MAIL_SECTION": "لقد أرسلنا لك بريدًا إلكترونيًا على",
+      "BUTTON_TXT": "الرجوع إلى الوراء"
+    },
+    "EXPIRED_LINK": {
+      "TEXT": "انتهت صلاحية الرابط. حاول مرة أخرى",
+      "BUTTON_TXT": "إعادة إرسال"
+    },
+    "RESET_PASSWORD": {
+      "TITLE": "نسيت كلمة السر",
+      "RESET_METHOD": "الرجاء اختيار الطريقة التي تريدها لإعادة تعيين كلمة المرور الخاصة بك",
+      "SEND_MAIL_TXT": ".سنرسل لك بريدًا إلكترونيًا لاستعادة حسابك",
+      "EMAIL_LABEL": "بريد إلكتروني",
+      "BUTTON_TXT": "إرسال"
+    },
+    "RESET_PASSWORD_SUCCESS": {
+      "TITLE": "تمت إعادة التعيين بنجاح",
+      "RESET_SUCCESS": "تم إعادة تعيين كلمة المرور الخاصة بك بنجاح. انقر أدناه لتسجيل الدخول",
+      "BUTTON_TXT": "مواصلة"
+    },
+    "SET_RESET_PASSWORD": {
+      "TITLE": "حدد كلمة مرور جديدة",
+      "WARNING_MSG": "يجب أن تكون كلمة مرورك الجديدة مختلفة عن كلمة المرور المستخدمة سابقًا",
+      "ENTER_NEW_PWD": "أدخل كلمة المرور الجديدة",
+      "CONFIRM_NEW_PWD": "قم بتأكيد كلمة المرور الجديدة",
+      "CONNECT_BUTTON": "تسجيل دخول",
+      "RESET_BUTTON": "إعادة ضبط"
+    },
+    "SUCCESS_EMAIL_VERIF": {
+      "TITLE": "تم التحقق من النجاح",
+      "SUCCESS_MSG": "تم التحقق من عنوان بريدك الإلكتروني بنجاح",
+      "BUTTON_TXT": "مواصلة"
+    }
+  }
+}

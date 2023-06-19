@@ -1,0 +1,52 @@
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+.title {
+    color: #2E3C66;
+    font-size: clamp(20px, 4vw, 40px);
+    line-height: 47px;
+    font-family: buttershine;
+    margin-bottom:7vh
+  
+}
+.cities{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    width: 100%;
+}
+.city2{
+    font-family: tommy_Regular;
+    font-size: clamp(0.8em, 3vw, 20px);
+    line-height: 25px;
+    color: black ;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.city{
+    font-family: tommy_Regular;
+    font-size: clamp(0.8em, 3vw, 20px);
+    line-height: 25px;
+    color: var(--blue) ;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.prestataires{
+    color: grey;
+    font-size: clamp(0.8em, 2vw, 16px);
+    line-height: 15px;
+}
+
+@media (max-width: 1000px) {
+    .cities{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        width: 95%;
+    }
+    .city{
+        font-size: clamp(0.8em,3vw, 20px);
+    }
+}

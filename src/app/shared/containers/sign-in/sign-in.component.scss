@@ -1,0 +1,124 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  color: var(--blue-2);
+  font-size: clamp(20px, 75%, 40px);
+  font-family: buttershine;
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+}
+.btn {
+  background-color: var(--green);
+  border-radius: 5px;
+  width: 123px;
+  height: 38px;
+  border: 0;
+  color: var(--white);
+  margin-top: 10px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.label {
+  color: var(--blue-2);
+  font-size: clamp(12px, 75%, 12px);
+  font-family: tommy_Regular;
+  margin-top: 20px;
+}
+.instructions {
+  display: flex;
+  margin-top: 15px;
+  align-items: center;
+  justify-content: space-between;
+}
+.register {
+  display: flex;
+  align-items: center;
+}
+.link {
+  color: var(--blue);
+  font-size: clamp(12px, 75%, 15px);
+  font-family: tommy_Regular;
+}
+.text {
+  color: var(--blue-2);
+  font-size: clamp(12px, 75%, 15px);
+  font-family: tommy_Regular;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.text-error {
+  color: var(--red);
+  font-size: clamp(12px, 75%, 15px);
+  font-family: tommy_Regular;
+  margin-top: 0px;
+}
+.checkbox-block {
+  display: flex;
+  margin: 3px;
+}
+.p-error {
+  position: absolute;
+}
+::ng-deep .form {
+  .p-inputtext {
+    max-width: 590px;
+    border-radius: 7px;
+    background-color: var(--white);
+
+    box-shadow: none !important;
+    border-color: #b3b3b3;
+    width: 100%;
+  }
+  .p-inputtext:hover {
+    max-width: 590px;
+    background-color: var(--white);
+    box-shadow: none !important;
+    border: 1px solid var(--green) !important;
+  }
+  .p-inputwrapper {
+    width: 100%;
+  }
+  .p-inputtext:focus {
+    max-width: 590px;
+    background-color: var(--white);
+    box-shadow: none !important;
+    border: 1px solid var(--green) !important;
+  }
+}
+::ng-deep .checkbox-block {
+  .p-checkbox .p-checkbox-box .p-checkbox-icon {
+    border: 1px solid var(--green) !important;
+    background-color: var(--green);
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  ::ng-deep {
+    .custom {
+      width: 100% !important;
+    }
+    .instructions {
+      display: flex;
+      margin-top: 15px;
+    }
+    .p-inputtext {
+      max-width: 590px;
+      background-color: var(--white);
+      height: 35px;
+      box-shadow: none !important;
+    }
+    .p-inputtext:focus {
+      max-width: 590px;
+      background-color: var(--white);
+      height: 35px;
+      box-shadow: none !important;
+      border: 1px solid var(--green) !important;
+    }
+  }
+}

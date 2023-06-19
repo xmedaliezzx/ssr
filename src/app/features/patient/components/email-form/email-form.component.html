@@ -1,0 +1,22 @@
+<form class="form" [formGroup]="mailForm">
+    <div (click)="retour()" class="profil">
+        <img  style="margin-left: 18px;transform: matrix(-1, 0, 0, -1, 0, 0);" src="../../../../../assets/images/play.svg">
+        Profil
+    </div>
+    <label class="label">Email</label>
+    <div style="position: relative; display: flex; align-items: center">
+      <input id="disabled-input" pInputText type="email" formControlName="email" class="inputStyle" />
+
+      <!-- <img (click)="updateMail()" style="position: absolute; right: 10px" src="/assets/icons/updateIcon.svg" /> -->
+    </div>
+
+    <div *ngIf="showMailInputs">
+      <div class="titleText">Entrer le nouveau mail</div>
+      <div style="position: relative; display: flex; align-items: center">
+        <input class="inputStyle" pInputText formControlName="new_email" type="tel" />
+      </div>
+      <p-button type="submit" (click)="UpdateEmail()" [loading]="PhoneBTNLoading"
+        styleClass="btn-Delete">Sauvegarder
+      </p-button>
+    </div>
+  </form>

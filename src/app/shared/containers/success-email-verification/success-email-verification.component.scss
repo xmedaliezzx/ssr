@@ -1,0 +1,72 @@
+.wrapper {
+    width: 100%;
+    height: calc(100% - 8px);
+    position: relative;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .box {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    max-width: 415px;
+    padding: 3.5rem;
+  }
+  .lottie {
+    max-width: 206px;
+   
+  }
+  .titre {
+    color: var(black2);
+  font-size: 20px;
+  text-align: center;
+  font-family: tommy_Medium;
+  font-weight: 600;
+  margin-bottom: 20px;
+  }
+  .discription {
+    color: var(black2);
+  font-size: 18px;
+  text-align: center;
+  font-family: tommy_Regular;
+  font-weight: 700;
+  margin-bottom: 20px;
+  }
+  
+  .btn {
+    background-color: var(--green);
+    border-radius: 11px;
+    width: 155px;
+    height: 52px;
+    border: 0;
+    color: var(--white);
+    font-family: tommy_Regular;
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 420px) {
+    .box {
+      padding: 1.5rem;
+    }
+  }
+  @media (max-width: 750px) {
+    .box {
+      width: 100%;
+      max-width: 420px;
+    }
+  }
+  @media (max-width: 1024px) {
+    .box {
+      width: 100%;
+      max-width: 420px;
+    }
+  }
+  

@@ -1,0 +1,33 @@
+<div class="wrapper">
+  <div class="card">
+    <div class="">
+      <i
+        (click)="close('WorningBlockedAppointmentModal')"
+        class="flex flex-row-reverse fa-regular fa-circle-xmark"
+      ></i>
+    </div>
+
+    <div class="contents justify-content-center">
+      <div class="content">
+        <span class="titre">Oups !</span>
+        <span class="discription"
+          >Si vous annulez le rendez-vous Vous ne serez plus en mesure d'avoir
+          un autre rdv pendant une heure </span
+        >
+        <div class="buttons">
+          <button class="Continuer">Confirmer</button>
+          <button
+            (click)="close('WorningBlockedAppointmentModal')"
+            class="Annuler"
+          >
+            Annuler
+          </button>
+        </div>
+      </div>
+
+      <div class="images">
+        <img class="image" src="/assets/icons/Object.png" />
+      </div>
+    </div>
+  </div>
+</div>

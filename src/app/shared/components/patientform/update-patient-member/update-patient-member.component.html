@@ -1,0 +1,13 @@
+
+
+<div class="container">
+    <div class="title">Modifier profile</div>
+    <div class="subtitle">
+        <div>
+            <p class="text">Informations du patient &nbsp;</p>
+        </div>
+    </div>
+    <app-form [dynamicform]="updatePatienForm" [flexDirection]="'row'"></app-form>
+
+    <p-button type="submit" [loading]="loading" styleClass="btn">Confirm</p-button>
+</div>

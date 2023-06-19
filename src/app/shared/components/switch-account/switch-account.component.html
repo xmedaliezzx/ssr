@@ -1,0 +1,16 @@
+<div class="containers" *ngIf="switchPlan">
+  <div class="switches-container">
+    <input type="radio" id="Prestataire" name="switchPlan" value="PRESTATAIRE" [checked]="switchPlan == 'PRESTATAIRE'"
+      (change)="onChange($event)" />
+    <input type="radio" id="Patient" name="switchPlan" value="PATIENT" [checked]="switchPlan == 'PATIENT'"
+      (change)="onChange($event)" />
+    <label for="Prestataire">Prestataire</label>
+    <label for="Patient">Patient</label>
+    <div class="switch-wrapper">
+      <div class="switch">
+        <div>Prestataire</div>
+        <div>Patient</div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+<div class="wapper">
+    <div class="rightSide">
+        <div class="TopSide">
+            <div class="left" style="width: 100%;">
+
+                <div class="statistiques" style="    display: grid;
+                grid-template-columns: repeat(6,1fr);
+                column-gap: 50px;
+                width: 100%;
+                justify-content: space-between;">
+                    <app-inter-total></app-inter-total>
+                    <app-inter-jour></app-inter-jour>
+                    <app-inter-nuit></app-inter-nuit>
+                    <app-statistics-week></app-statistics-week>
+                    <app-statistics-month></app-statistics-month>
+                    <app-revenues></app-revenues> 
+                </div>
+            </div>
+
+        </div>
+
+        <div class="contentBottom">
+            <div class="contentBottomLeft">
+                <app-revenue-statistics-day></app-revenue-statistics-day>
+            </div>
+            <div class="contentBottomRight">
+                <app-revenue-statistics-month></app-revenue-statistics-month>
+            </div>
+        </div>
+    </div>

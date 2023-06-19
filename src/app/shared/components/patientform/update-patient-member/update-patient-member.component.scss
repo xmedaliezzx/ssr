@@ -1,0 +1,75 @@
+app-form {
+    height: 700px;
+    overflow: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    width: 90%;
+}
+
+.title {
+    margin-top: 15%;
+    font-family: buttershine;
+    font-size: clamp(20px, 4vw, 30px);
+    color: #2E3C66;
+    text-align: left;
+    line-height: clamp(2rem, 4vw, 4rem);
+}
+
+.subtitle {
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    font-family: buttershine;
+    font-size: clamp(20px, 4vw, 30px);
+    color: #2E3C66;
+    text-align: left;
+    line-height: clamp(2rem, 4vw, 4rem);
+    margin-bottom: 26px;
+}
+
+::ng-deep {
+    .btn {
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: var(--green);
+        border-radius: 5px;
+        line-height: 38px;
+        height: 38px;
+        border: 0;
+        color: var(--white);
+        margin-top: 10px;
+
+        .pi {
+            margin-right: 5px;
+            font-size: 14px;
+        }
+    }
+
+    .btn:enabled:hover {
+        background-color: var(--green);
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width:600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}

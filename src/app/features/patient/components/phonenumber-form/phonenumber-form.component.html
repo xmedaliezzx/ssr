@@ -1,0 +1,36 @@
+<div class="form" [formGroup]="phoneNumberForm">
+    <div (click)="retour()" class="profil">
+        <img  style="margin-left: 18px;transform: matrix(-1, 0, 0, -1, 0, 0);" src="../../../../../assets/images/play.svg">
+        Profil
+    </div>
+   
+
+    <label class="label">Numéro de télèphone</label>
+
+    <div style="position: relative; display: flex; align-items: center">
+      <input class="inputStyle" pInputText type="tel" formControlName="phoneNumber" />
+      <!-- <img (click)="updateNumber()" style="position: absolute; right: 10px" src="/assets/icons/updateIcon.svg" /> -->
+    </div>
+    <div *ngIf="
+        phoneNumberForm?.controls?.phoneNumber?.touched &&
+        phoneNumberForm?.controls?.phoneNumber?.invalid
+      ">
+      <small>
+        <p class="">Phone Number is not valid.</p>
+      </small>
+    </div>
+
+    <div *ngIf="showPhoneInputs">
+      <div class="titleText">Entrer le nouveau numéro de téléphone</div>
+      <div style="position: relative; display: flex; align-items: center">
+        <input styleClass="w-full" pInputText class="password" formControlName="phoneNumberNV" type="tel" />
+        <img (click)="sendOTP()" style="position: absolute; right: 10px; width: 25px"
+          src="/assets/icons/sendOTPIcon.svg" />
+      </div>
+      <div class="titleText">Entrer OTP</div>
+      <input styleClass="w-full" pInputText class="inputStyle" formControlName="phoneNumberOTP" type="tel" />
+
+      <p-button type="submit" (click)="UpdatePhoneNumber()" [loading]="PhoneBTNLoading"
+        styleClass="btn-Signup">Sauvegarder</p-button>
+    </div>
+  </div>

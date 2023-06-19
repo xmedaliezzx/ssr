@@ -1,0 +1,22 @@
+<div class="wrapper">
+  <div style="width: 100%">
+    <app-navbar></app-navbar>
+    <div style="margin: 3rem !important">
+      <div class="progressBar">
+        <p-progressBar [value]="((step + 1) / (finalStep + 1)) * 100"></p-progressBar>
+      </div>
+      <span class="title">{{ stepTitle }}</span>
+      <p></p>
+      <div style="width: 70%" *ngIf="((step + 1) / (finalStep + 1)) * 100 != 100">
+        <app-form [dynamicform]="form" [flexDirection]="'row'" (submitEvent)="setFormData($event)"></app-form>
+      </div>
+      <div style="width: 100%" *ngIf="((step + 1) / (finalStep + 1)) * 100 == 100">
+        <app-patientform (onchange)="getFinalStepChangements($event)"></app-patientform>
+      </div>
+    </div>
+  </div>
+  <div>
+    <button (click)="Precedent()" [hidden]="btnDisable" class="suivant-btn">Precedent</button>
+    <button (click)="Suivant()" class="suivant-btn">Suivant</button>
+  </div>
+</div>

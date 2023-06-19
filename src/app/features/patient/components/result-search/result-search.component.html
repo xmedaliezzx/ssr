@@ -1,0 +1,126 @@
+<app-navbar></app-navbar>
+<div class="wrapper">
+  <div
+   
+    class="body"
+  >
+    <div>
+      <img class="image"
+
+        src="../../../../../assets/images/play.svg"
+      />
+    </div>
+    <div
+      class="link"
+    >
+      Trouver un(e) infirmier(e)
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="leftSide">
+      <div *ngFor="let item of rdvData">
+        <div class="box">
+          <div class="light-card" (click)="reserver()">
+            <div class="card-header">
+              <div class="user-data">
+                <div class="image-block">
+                  <img
+                    src="{{ item.image }}"
+                    [alt]=""
+                    class="thumbnail-img-historique"
+                  />
+                </div>
+                <div class="title-block">
+                  <div
+                    style="
+                      display: flex;
+                      justify-content: space-between;
+                      align-items: center;
+                    "
+                  >
+                    <div style="display: flex; align-items: center">
+                      <div class="name">{{ item.name }}</div>
+                    </div>
+                    <div
+                      style="
+                        color: #1b8793;
+                        position: absolute;
+                        right: 20px;
+                        bottom: 20px;
+                        display: flex;
+                      "
+                    >
+                      Appeler
+                      <img
+                        style="margin-left: 5px"
+                        src="../../../../../assets/images/play.svg"
+                      />
+                    </div>
+                  </div>
+                  <div class="fonction">{{ item.jobTitle }}</div>
+                  <div class="disponibility">Disponible Immédiatement</div>
+                  <div>
+                    <img
+                      src="../../../../../assets/icons/rating.svg"
+                      style="width: 30%"
+                      [alt]=""
+                    />
+                  </div>
+
+                  <div class="card-content">
+                    <div class="delais-historique">
+                      <div class="card-body">
+                        <div class="date">
+                          <img
+                            style="margin-right: 5px"
+                            src="../../../../../assets/icons/location.svg"
+                          />
+                          <span class="text-date">{{ item.distance }}</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+           
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="rightSide">
+      <google-map
+        [height]="innerWidth > 1023 ? '100%' : '50vh'"
+        [options]="mapOptions"
+        width="100%"
+        [center]="center"
+        [zoom]="zoom"
+        (mapClick)="addMarker($event)"
+      >
+        <map-marker
+          [position]="destinationPosition"
+          [options]="markerOptions"
+        ></map-marker>
+        <map-marker
+          [position]="markerPositions"
+          [options]="markerOptions"
+        ></map-marker>
+        <map-marker
+          [position]="startPosition"
+          [options]="markerOptions"
+        ></map-marker>
+
+        <div *ngFor="let elem of positions">
+          <map-marker [position]="elem" [options]="markerOptions"></map-marker>
+        </div>
+
+        <map-directions-renderer
+          *ngIf="directionsResults$ | async as directionsResults"
+          [directions]="directionsResults"
+        ></map-directions-renderer>
+      </google-map>
+    </div>
+  </div>
+</div>

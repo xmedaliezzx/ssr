@@ -1,0 +1,73 @@
+app-form{
+    height: 700px;
+    overflow: auto;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    width: 100%;
+
+
+}
+.title {
+    color: var(--blue-2);
+    font-size: clamp(20px, 75%, 40px);
+    font-family: buttershine;
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+}
+.subtitle {
+    display: flex;
+    align-items: center;
+ 
+}
+.text {
+    color: var(--blue-2);
+    font-size: clamp(12px, 75%, 15px);
+    font-family: tommy_Regular;
+    margin-left: 5px;
+}
+.link {
+    color: var(--blue);
+    font-size: clamp(12px, 75%, 15px);
+    font-family: tommy_Regular;
+}
+::ng-deep {
+    .btn-Signup {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: var(--green);
+    border-radius: 5px;
+    line-height: 38px;
+    height: 38px;
+    border: 0;
+    color: var(--white);
+    margin-top: 10px;
+    .pi{
+        margin-right: 5px;
+        font-size: 14px;
+    }
+}
+.btn-Signup:enabled:hover {
+    background-color:var(--green);
+}
+}
+
+@media screen and (max-width: 1023px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width:600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+::-webkit-scrollbar {
+    width: 0px;
+  }  

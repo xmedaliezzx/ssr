@@ -1,0 +1,59 @@
+<div class="wrapper">
+  <div class="card">
+    <div class="">
+      <i
+        (click)="close('prestataireRatingModal')"
+        class="flex flex-row-reverse fa-regular fa-circle-xmark"
+      ></i>
+    </div>
+
+    <div class="flex justify-content-center">
+      <div class="flex-column">
+        <div class="image-block flex justify-content-center">
+          <img
+            class="prestataire-img"
+            src="https://i.pinimg.com/564x/96/ff/6a/96ff6a9cfa6835efa3c1eba9d14b389c.jpg"
+          />
+        </div>
+
+        <div class="flex flex-column align-items-center">
+          <span class="flex align-items-center justify-content-center name">
+            Foulen
+            <i
+              class="flex align-items-center justify-content-center fa-solid fa-circle-check"
+            ></i>
+          </span>
+          <span class="flex align-items-center justify-content-center prestataire_type" >
+            Infirmier
+          </span>
+          <span class="note">
+            Veuillez Noter Foulen Et Gagner<br />
+            Une Remise À La Prochaine Date
+          </span>
+          <span class="traiter">Comment il vous a traiter?</span>
+          <div class="image-block flex justify-content-center">
+           
+            <p-rating [(ngModel)]="starsValue"  [stars]="5">
+             
+              <ng-template pTemplate="onicon">
+                  <img  class="star" src="/assets/icons/star_gold.svg"/>
+              </ng-template>
+              <ng-template pTemplate="officon">
+                  <img class="star" src="/assets/icons/star_silver.svg"  />
+              </ng-template>
+          </p-rating>
+          </div>
+          <textarea
+            [autoResize]="true"
+            class="paragraph_text"
+            pInputTextarea
+            placeholder="Dis quelque chose sur Foulen..."
+            cols="25"
+            rows="3"
+          ></textarea>
+          <button class="flex justify-content-center">Envoyer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

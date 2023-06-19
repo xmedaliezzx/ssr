@@ -1,0 +1,85 @@
+<div class="wrapper">
+    <div
+      style="
+        width: 90%;
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        padding-top: 30px;
+      "
+    >
+      <div>
+        <img
+          style="transform: matrix(-1, 0, 0, 1, 0, 0); margin-right: 5px"
+          src="../../../../../assets/images/play.svg"
+        />
+      </div>
+      <div class="title">Appeler le prestataire</div>
+    </div>
+  
+    <div class="content">
+      <div class="leftSide">
+        <div class="box">
+          <div class="light-card">
+            <div class="flex flex-row">
+              <div
+                class="image-block "
+              >
+                <img
+                  class="prestataire-img"
+                  src="https://i.pinimg.com/564x/ce/63/47/ce63475562f960ede351c2533415adc5.jpg"
+                />
+              </div>
+  
+              <div
+                class="info  flex flex-column  justify-content-center"
+              >
+              <div class=" flex flex-row ">
+
+                <span class="name flex flex-row ">
+                    Foulen
+                  
+                  </span>
+                
+              </div>
+               
+                <span class="flex prestataire_type"> Infirmier </span>
+                <span class="disponible ">Disponible Immédiatement</span>
+                <p-rating class="stars" [(ngModel)]="mystarsValue" [stars]="5">
+                  <ng-template pTemplate="onicon">
+                    <img class="star" src="/assets/icons/star_gold.svg" />
+                  </ng-template>
+                  <ng-template pTemplate="officon">
+                    <img class="star" src="/assets/icons/star_silver.svg" />
+                  </ng-template>
+                </p-rating>
+                <span class="cote"
+                  ><i class="fa-solid fa-location-dot"></i>2 Kilomètres</span
+                >
+              </div>
+            </div>
+          </div>
+  
+          <div class="light-card ">
+          <span class="arrived">Foulen<br> arrive dans 15 minutes</span>
+          
+          <div class="lottie">
+            <div class="inside">
+              <ng-lottie [options]="options"></ng-lottie>
+            </div>
+          </div>
+
+        
+        <div><button class="envoyer">Annuler la demande</button></div>
+        
+          </div>
+
+          
+        </div>
+      </div>
+      <div class="rightSide">
+          <img src="../../../../../assets/images/map.png" />
+        </div>
+    </div>
+  </div>
+  

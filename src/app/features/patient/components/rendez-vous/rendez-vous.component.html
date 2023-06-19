@@ -1,0 +1,136 @@
+
+
+<div  class="title">
+    Bientôt
+</div>
+<div class="big-box">
+<div *ngFor="let item of rdvData">
+            <div class="box">
+                <div class="dark-card">
+                    <div class="card-header">
+                        <div class="user-data">
+                            <div class="image-block">
+                                <img src="{{item.image}}" [alt]=""
+                                    class="thumbnail-img" />
+                            </div>
+                            <div class="light-title-block">
+                                <div class="name">
+                                    <span>{{item.name}}</span> <i
+                                        class="fa-solid fa-circle-check white-icon"></i>
+                                </div>
+                                <span class="light-text">{{item.jobTitle}}</span>
+                            </div>
+                        </div>
+                        <div class="notfication">
+                            <img src="/assets/bell.png" alt="bell" class="bell-notif">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <div class="delais">
+                            <div class="card-body">
+                                <div class="left-date">
+                                    <img src="/assets/calendar.svg" alt="calendar"
+                                        class="light-icon">
+                                    <p class="light-text">{{item.startDate}} </p>
+                                </div>
+                            </div>
+                            <div class="left-date">
+                                <div class="date">
+                                    <i class="fa-regular fa-clock light-icon"></i>
+                                    <p class="light-text">{{item.startTime}} </p>
+                                </div>
+                               
+                            </div>
+                        </div>
+                        <span class="bold-light-text spacing">Prix des services</span>
+                        <div class="details">
+                            <div class="card-body">
+                                <p class="light-text">Soins Simple :</p>
+                                <p class="light-text">Déplacement :</p>
+                                <p class="light-text">TOTALE</p>
+                            </div>
+                            <div class="card-body">
+                                <p class="bold-light-text">{{item.simpleCare}} TND</p>
+                                <p class="bold-light-text">{{item.shift}} TND</p>
+                                <p class="bold-light-text">{{item.total}} TND</p>
+                            </div>
+                        </div>
+                    
+                        <div class="card-footer">
+                            <button class="light-button">
+                                <p  class="btn-text">Annuler le rendez-vous</p>
+                            </button>
+                        </div>
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+</div>
+
+<div class="title">
+    Plus Tard
+</div>
+<div class="big-box">
+    <div *ngFor="let item of rdvData">                
+            <div class="box">
+                <div class="light-card">
+                    <div class="card-header">
+                        <div class="user-data">
+                            <div class="image-block">
+                                <img src="{{item.image}}" [alt]="" class="thumbnail-img" />
+                            </div>
+                            <div class="title-block">
+                                <div class="name2">
+                                    <span>{{item.name}}</span> <i
+                                        class="fa-solid fa-circle-check blue-icon"></i>
+                                </div>
+                                <span class="text">{{item.jobTitle}} </span>
+                            </div>
+                        </div>
+                        <!-- <div class="notfication">
+                            <img src="/assets/bell.png" alt="bell" class="bell-notif">
+                        </div> -->
+                    </div>
+
+                    <div class="card-content">
+                        <div class="delais">
+                            <div class="card-body">
+                                <div class="left-date">
+                                    <img src="/assets/green-calendar.svg" alt="calendar"
+                                        class="light-icon">
+                                    <p class="text">{{item.startDate}} </p>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="date">
+                                    <i class="fa-regular fa-clock green-icon"></i>
+                                    <p class="text">{{item.startTime}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="bold-text spacing">Prix des services</span>
+                        <div class="details">
+                            <div class="card-body">
+                                <p class="text">Soins Simple :</p>
+                                <p class="text">Déplacement :</p>
+                                <p class="text">TOTALE</p>
+                            </div>
+                            <div class="card-body">
+                                <p class="bold-text">{{item.simpleCare}} TND</p>
+                                <p class="bold-text">{{item.shift}} TND</p>
+                                <p class="bold-text">{{item.total}} TND</p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button class="button">
+                                <p class="btn-text">Annuler le rendez-vous</p>
+                            </button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+    </div>
+</div>

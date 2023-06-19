@@ -1,0 +1,141 @@
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+   // align-items: center;
+}
+
+.footer {
+    display: grid;
+width: 100%;
+   // grid-template-columns: 260px 240px 340px 240px 140px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 150px;
+    column-gap: 60px;
+    margin-top: 5vh;
+   // justify-items: stretch;
+   // width: 100%;
+
+}
+
+
+hr {
+    width: 100%;
+    margin-bottom: 20px;
+    color: #2E3C66;
+}
+
+.title {
+    color: #2E3C66;
+    font-size: 25px;
+    line-height: 67px;
+    font-family: buttershine;
+}
+
+
+
+.link {
+    color: #2E3C66;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 19px;
+    font-family: tommy_Medium;
+}
+
+.copyright {
+    margin-bottom: 23px;
+}
+
+.logo {
+    margin-bottom: 15px;
+}
+
+.btn {
+    background-color: #2E3C66;
+    border-radius: 11px;
+    width: 100%;
+    height: 102px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    line-height: 0;
+    display: flex;
+
+    flex-direction: column;
+}
+
+.socialMedia {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.rating {
+    width: 30%;
+
+}
+
+ng-lottie {
+    width: 20%;
+}
+
+.lottie {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.lottie .inside {
+    width: 104px;
+    height: 104px;
+    transform: matrix(-1, 0, 0, -1, 0, 0);
+}
+.copyright{
+    color: #2E3C66;
+    font-family: tommy_Regular;
+}
+
+@media (max-width: 1439px) {
+    .footer {
+        
+        grid-template-columns: repeat(3,1fr)  ;
+     
+    }
+}
+@media (max-width: 1000px) {
+    .footer {
+        
+      display: flex;
+      justify-content: center;
+     width: 100%;
+    }
+    .block1{
+        display: flex;
+        flex-direction: column;
+       margin-bottom: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .block2-1, .block2-2, .block2-3, .block3{
+display: none;
+    }
+    hr{
+        display: none;
+    }
+    .copyright{
+        display: none;
+    }
+    .link {
+        color: #2E3C66;
+        font-size: 14px;
+        line-height: 10px;
+        margin-bottom: 19px;
+        font-family: tommy_Medium;
+    }
+    .lottie{
+        display: none;
+    }
+}
+
+    

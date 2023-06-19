@@ -1,0 +1,32 @@
+<div class="wrapper">
+  <div class="card">
+    <div class="">
+      <i (click)="close('soinsChoixModal')" class="flex flex-row-reverse fa-regular fa-circle-xmark"></i>
+    </div>
+
+    <div class="besoin flex justify-content-evenly">
+
+      <div>
+        <div class="checked ">
+          <div class="titre">
+            <p>Avez vous besoin de</p>
+          </div>
+          <div class="radioButton m-1">
+            <p-radioButton value="planned" [(ngModel)]="checked" styleClass="checkradioButton"
+              inputId="ingredient1"></p-radioButton>
+            <label class="labels">Prendre rendez-vous à domicile</label>
+          </div>
+          <div class="radioButton m-1">
+            <p-radioButton value="immediate" styleClass="checkradioButton" [(ngModel)]="checked"
+              inputId="ingredient2"></p-radioButton>
+            <label class="labels">Soins immédiats à domicile</label>
+          </div>
+          <div class="button">
+            <button class="flex justify-content-center" (click)="confirm()">Confirmer</button>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-content-center"><img class="image" src="/assets/icons/calander-image.png" /></div>
+    </div>
+  </div>
+</div>

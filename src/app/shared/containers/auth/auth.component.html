@@ -1,0 +1,46 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="col1">
+        <router-outlet></router-outlet>
+    </div>
+    <div class="col2"  *ngIf="typePrestataire === 'paramedical' ">
+        <img  src="/assets/images/login-img.png">
+
+
+    </div>
+    <div class="col2"  *ngIf="typePrestataire === 'doctors' ">
+        <img   class="img" src="/assets/images/doctor_male.png">
+
+
+    </div>
+    <div class="col2"  *ngIf="typePrestataire === 'transport_medical' ">
+        <img  class="img "src="/assets/images/ambulance.png">
+
+
+    </div>
+    <div class="col2"  *ngIf="typePrestataire === 'maison_retraite' ">
+        <img class="img"src="/assets/images/maison_retraite.png">
+
+
+    </div>
+    <div class="col2"  *ngIf="typePrestataire === 'parapharmacie' ">
+        <img  class="img" src="/assets/images/chaise roulant.png">
+
+
+    </div>
+    <div class="col2"  *ngIf="typePrestataire === 'laboratoires' ">
+        <img class="img"src="/assets/images/labo.png">
+
+
+    </div>
+    <div class="col2"  *ngIf="typePrestataire === 'garde_denfants' ">
+        <img class="imgbebe"src="/assets/images/babysetting.png">
+
+
+    </div>
+    <div class="col2"  *ngIf="typePrestataire === 'pomp_funebre' ">
+        <img class="img" src="/assets/images/endering_closed_coffin_isolated.png">
+
+
+    </div>
+</div>

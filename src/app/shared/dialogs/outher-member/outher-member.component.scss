@@ -1,0 +1,68 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--white);
+  max-width: 358px;
+  width: 100%;
+}
+
+.card {
+  width: 100%;
+}
+
+.content {
+  margin: 20px 20px 20px 20px;
+}
+
+button {
+  background-color: var(--green);
+  width: 125px;
+  height: 40px;
+  color: var(--blanc);
+  border-radius: 10px;
+  border-color: #e9e9e900 !important;
+  text-align: center;
+  align-items: center;
+  font-family: tommy_Regular;
+  font-size: 16px;
+  //margin: 20px;
+  margin-left: 25px;
+  margin-bottom: 10px;
+}
+
+::ng-deep .labels{
+margin-left: 5px;
+color: var(--blue-2);
+font-size: 16px;
+}
+
+::ng-deep .radioButton {
+  padding: 5px;
+  font-size: 16px;
+  color: var(--blue-2);
+  font-family: tommy_Regular;
+
+  .checkradioButton .p-radiobutton-box .p-radiobutton-icon {
+    background-color: var(--green);
+  }
+  border-color: var(--green);
+
+  .checkradioButton .p-radiobutton-box.p-highlight {
+    width: 50px;
+    border-color: var(--green);
+    background: var(--blanc);
+    border: solid;
+  }
+  .checkradioButton .p-radiobutton-box {
+    border: 2px solid var(--blue-2);
+  }
+  .checkradioButton .p-radiobutton-box.p-highlight {
+    border: 2px solid var(--green);
+  }
+}
+::ng-deep {
+  .background {
+    background-color: var(--white) !important;
+  }
+}

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="52.623" height="50.438" viewBox="0 0 52.623 50.438">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.85" y1="0.941" x2="0.15" y2="0.211" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#2d6985"/>
+      <stop offset="1" stop-color="#c2e3ff"/>
+    </linearGradient>
+    <radialGradient id="radial-gradient" cx="0.312" cy="0.28" r="0.929" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#66cfff"/>
+      <stop offset="0.11" stop-color="#64cbfa"/>
+      <stop offset="0.234" stop-color="#5ec0ec"/>
+      <stop offset="0.365" stop-color="#55add6"/>
+      <stop offset="0.5" stop-color="#4994b6"/>
+      <stop offset="0.639" stop-color="#38738e"/>
+      <stop offset="0.781" stop-color="#244b5c"/>
+      <stop offset="0.922" stop-color="#0d1c22"/>
+      <stop offset="1"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-2" cx="0.276" cy="0.018" r="1.145" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#d9f0ff"/>
+      <stop offset="1"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-3" cx="0.575" cy="0.672" r="0.75" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#8da4c9"/>
+      <stop offset="1" stop-color="#fff"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-4" cx="0.439" cy="0.014" r="1.259" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#b5deff"/>
+      <stop offset="1"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-5" cx="1.79" cy="0.804" r="2.119" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#80d5ff"/>
+      <stop offset="0.11" stop-color="#7dd1fa"/>
+      <stop offset="0.234" stop-color="#76c5ec"/>
+      <stop offset="0.365" stop-color="#6bb2d6"/>
+      <stop offset="0.5" stop-color="#5b98b6"/>
+      <stop offset="0.639" stop-color="#47768e"/>
+      <stop offset="0.781" stop-color="#2e4d5c"/>
+      <stop offset="0.922" stop-color="#111d22"/>
+      <stop offset="1"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-6" cx="1.326" cy="0.833" r="1.403" gradientUnits="objectBoundingBox">
+      <stop offset="0"/>
+      <stop offset="0.078" stop-color="#111d22"/>
+      <stop offset="0.219" stop-color="#2e4d5c"/>
+      <stop offset="0.361" stop-color="#47768e"/>
+      <stop offset="0.5" stop-color="#5b98b6"/>
+      <stop offset="0.635" stop-color="#6bb2d6"/>
+      <stop offset="0.766" stop-color="#76c5ec"/>
+      <stop offset="0.89" stop-color="#7dd1fa"/>
+      <stop offset="1" stop-color="#80d5ff"/>
+    </radialGradient>
+  </defs>
+  <g id="Groupe_11883" data-name="Groupe 11883" transform="translate(0 0)">
+    <g id="Groupe_11786" data-name="Groupe 11786" transform="translate(0 0)">
+      <path id="Tracé_7872" data-name="Tracé 7872" d="M47.189,13.342a4.035,4.035,0,0,0-2.108.582c-2.031,1.221-5.631,7.866-7.414,11.378a3,3,0,0,1-2.27,1.65c-3.891.61-11.323,1.981-13.112,3.535a4.107,4.107,0,0,0-1.3,4.007c.533,2.308,5.74,7.787,8.529,10.567a2.994,2.994,0,0,1,.868,2.669c-.623,3.889-1.615,11.381-.689,13.563A4.108,4.108,0,0,0,33.1,63.77c2.36.206,9.18-3.053,12.686-4.847a3,3,0,0,1,2.806,0c3.507,1.794,10.326,5.053,12.686,4.847a4.108,4.108,0,0,0,3.41-2.477c.926-2.181-.068-9.674-.689-13.563a3,3,0,0,1,.866-2.669c2.789-2.781,8-8.259,8.529-10.567a4.1,4.1,0,0,0-1.3-4.007c-1.788-1.555-9.221-2.925-13.111-3.535a3,3,0,0,1-2.27-1.65c-1.784-3.512-5.384-10.157-7.415-11.378a4.032,4.032,0,0,0-2.107-.582Z" transform="translate(-20.878 -13.342)" fill-rule="evenodd" opacity="0.8" fill="url(#linear-gradient)"/>
+      <path id="Tracé_7873" data-name="Tracé 7873" d="M44.291,21.1c-.2.331-.365.623-.494.843-.936,1.617-1.821,3.27-2.666,4.935a7.251,7.251,0,0,1-5.408,3.929c-1.845.289-3.691.62-5.517,1.011-.249.053-.578.123-.955.208a2.981,2.981,0,0,0-1.584,4.878c.254.289.479.54.65.73,1.247,1.39,2.547,2.742,3.869,4.06a7.267,7.267,0,0,1,2.065,6.358c-.294,1.844-.551,3.7-.743,5.56-.027.253-.061.589-.1.972A2.981,2.981,0,0,0,37.559,57.6c.355-.153.663-.289.9-.393,1.707-.758,3.394-1.575,5.057-2.425a7.251,7.251,0,0,1,6.684,0c1.663.851,3.351,1.667,5.057,2.425.234.1.542.24.9.393A2.981,2.981,0,0,0,60.3,54.585c-.036-.383-.07-.719-.1-.972-.193-1.859-.449-3.716-.744-5.56A7.267,7.267,0,0,1,61.524,41.7c1.323-1.318,2.622-2.67,3.87-4.06.17-.19.395-.441.65-.73a2.982,2.982,0,0,0-1.585-4.878c-.376-.084-.706-.155-.955-.208-1.826-.392-3.672-.722-5.517-1.011a7.251,7.251,0,0,1-5.407-3.929c-.846-1.665-1.731-3.318-2.667-4.935-.128-.221-.3-.512-.493-.843a2.982,2.982,0,0,0-5.129,0Z" transform="translate(-20.543 -12.993)" fill-rule="evenodd" opacity="0.4" fill="url(#radial-gradient)" style="mix-blend-mode: screen;isolation: isolate"/>
+      <path id="Tracé_7874" data-name="Tracé 7874" d="M29.518,54.415A56.027,56.027,0,0,1,69.959,29.408a70.543,70.543,0,0,0-10.978-2.457,3,3,0,0,1-2.27-1.65c-1.784-3.512-5.384-10.157-7.415-11.378a4.108,4.108,0,0,0-4.214,0c-2.031,1.221-5.631,7.866-7.414,11.378a3,3,0,0,1-2.27,1.65c-3.891.61-11.323,1.981-13.112,3.535a4.107,4.107,0,0,0-1.3,4.007c.533,2.308,5.74,7.787,8.529,10.567a2.994,2.994,0,0,1,.868,2.669c-.282,1.764-.641,4.269-.862,6.685Z" transform="translate(-20.878 -13.342)" fill-rule="evenodd" fill="url(#radial-gradient-2)" style="mix-blend-mode: screen;isolation: isolate"/>
+      <path id="Union_2" data-name="Union 2" d="M27.614,45a3,3,0,0,0-2.807,0C21.3,46.8,14.481,50.057,12.122,49.852A4.119,4.119,0,0,1,8.888,47.74a5.74,5.74,0,0,0,.358.464,3.468,3.468,0,0,0,2.151,1.3c2.482.35,9.651-5.18,13.338-8.225a2.134,2.134,0,0,1,2.95,0c3.686,3.044,10.856,8.575,13.338,8.225a3.47,3.47,0,0,0,2.152-1.3c.125-.147.245-.3.357-.464A4.114,4.114,0,0,1,40.3,49.852q-.107.009-.226.009C37.529,49.861,31.014,46.744,27.614,45ZM40.58,33.069a2.243,2.243,0,0,1,.9-2.76c3.508-2.454,9.846-7.19,10.943-9.752l0,.018c-.533,2.308-5.741,7.787-8.529,10.568a3,3,0,0,0-.866,2.669c.621,3.889,1.615,11.381.689,13.563l-.008.017C44.318,44.674,41.975,37.118,40.58,33.069ZM8.713,47.375c-.926-2.182.066-9.674.689-13.563a3,3,0,0,0-.867-2.669c-2.79-2.781-8-8.26-8.529-10.568l0-.018c1.1,2.562,7.436,7.3,10.945,9.752a2.247,2.247,0,0,1,.9,2.761c-1.4,4.047-3.739,11.6-3.121,14.322ZM37.043,14.434A2.474,2.474,0,0,1,34.7,12.727C33.272,8.876,30.421,1.82,28.308,0l.009.006c2.03,1.221,5.632,7.866,7.414,11.378A3,3,0,0,0,38,13.033c3.891.61,11.323,1.981,13.111,3.535l.009.008C48.738,15.128,41.146,14.6,37.043,14.434ZM1.307,16.568c1.789-1.554,9.221-2.925,13.111-3.535a2.994,2.994,0,0,0,2.27-1.649C18.471,7.871,22.072,1.226,24.1.006L24.112,0C22,1.82,19.149,8.876,17.726,12.727a2.476,2.476,0,0,1-2.349,1.707c-4.1.163-11.694.694-14.078,2.142Z" transform="translate(0.101 0.576)" fill="url(#radial-gradient-3)" style="mix-blend-mode: multiply;isolation: isolate"/>
+      <path id="Tracé_7880" data-name="Tracé 7880" d="M25.971,29.735a80.354,80.354,0,0,1,10.178-.751c1.54-.051,2.284-.187,2.967-1.747,1.718-3.925,2.5-7.1,4.732-11.041a6.49,6.49,0,0,1,.976-1.428c.862-.862,1.92-.451,1.728.826-.7,4.655-1.525,9.295-2.516,13.9-.766,3.556-2.835,3.646-6.009,3.531-3.829-.139-9.05-.462-12.845-1.014-3.341-.487-1.719-1.888.789-2.272Z" transform="translate(-20.744 -13.288)" fill-rule="evenodd" fill="url(#radial-gradient-4)" style="mix-blend-mode: screen;isolation: isolate"/>
+      <path id="Tracé_7881" data-name="Tracé 7881" d="M42.347,20.1c.85.3,1.048,1.926.442,3.626S41,26.563,40.153,26.261s-1.047-1.927-.441-3.626S41.5,19.8,42.347,20.1Z" transform="translate(-19.854 -12.97)" fill="#fff" fill-rule="evenodd"/>
+      <path id="Tracé_7882" data-name="Tracé 7882" d="M43.735,16.138c.477.225.5,1.179.053,2.134s-1.2,1.546-1.675,1.322-.5-1.179-.053-2.133,1.2-1.547,1.675-1.323Z" transform="translate(-19.722 -13.19)" fill="#fff" fill-rule="evenodd"/>
+      <path id="Tracé_7883" data-name="Tracé 7883" d="M59.18,52.662c1.14-.226,2.311.841,2.616,2.382s-.371,2.974-1.511,3.2-2.311-.841-2.616-2.382.371-2.974,1.511-3.2Z" transform="translate(-18.844 -11.166)" fill-rule="evenodd" opacity="0.65" fill="url(#radial-gradient-5)" style="mix-blend-mode: screen;isolation: isolate"/>
+      <path id="Tracé_7884" data-name="Tracé 7884" d="M64.549,39.238c-1.541,1.3-3.233,2.279-4.732,3.474a2.21,2.21,0,0,0-.939,2.46c.229.951.659,1.843.939,2.779.959,3.2.117,3.271-1.6.764-.749-1.094-1.43-2.24-2.084-3.393-1.3-2.3-.832-3.525,1.387-4.742A40.857,40.857,0,0,1,63.8,37.961c1.89-.653,2.483-.186.751,1.277Z" transform="translate(-18.965 -11.995)" fill-rule="evenodd" opacity="0.65" fill="url(#radial-gradient-6)" style="mix-blend-mode: screen;isolation: isolate"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,118 @@
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 12vh;
+}
+
+.bigBox {
+    display: grid;
+    row-gap: 19px;
+    column-gap: 16px;
+    grid-template-columns: repeat(4, 1fr);
+    width:100%
+}
+
+.box {
+    background-color: white;
+    border-radius: 10px;
+   // aspect-ratio: 2/2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background-image: url('/assets/images/background_service.png');
+    background-size: cover;
+    background-position: center center;
+    height: 20vw;
+    width: 100%;
+  
+}
+
+.title {
+    color: #2E3C66;
+    font-size: clamp(20px, 4vw, 40px);
+    font-family: buttershine;
+    text-align: center;
+    margin: 51px;
+}
+
+.commander {
+    width: 45%;
+    aspect-ratio: 3/1;
+    /* height: 52px; */
+    background-color: #1B8793;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: clamp(12px, 1vw, 15px);
+    font-family: tommy_Light;
+ 
+}
+.image{
+    width: 11vw;
+    padding: 10px;
+    
+ 
+}
+.fonction{
+    
+    color: #2E3C66;
+    font-size: clamp(14px,1vw,20px);
+    font-family: tommy_Medium;
+    text-align: center;
+    padding-bottom: 20px;
+  
+}
+.smallBox{
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (max-width: 1000px) {
+    .bigBox {
+        display: grid;
+        row-gap: 19px;
+        column-gap: 16px;
+        grid-template-columns: repeat(2, 1fr);
+        width: 95%;
+    }
+    .image{
+        width: 50%;
+        padding-bottom: 10px;
+     object-fit: contain;
+    }
+
+    .box {
+        background-color: white;
+        border-radius: 10px;
+       // aspect-ratio: 2/2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+         background-image: url('/assets/images/background_service.png');
+        background-size: cover;
+        background-position: center center;
+        height: 30vw;
+        width: 100%;
+      
+    }
+    .smallBox{
+        margin-bottom: 0;
+    }
+    .commander{display: none;}
+}
+// @media (max-width: 375px) {
+//     .bigBox {
+//         display: grid;
+//         row-gap: 19px;
+//         column-gap: 16px;
+//         grid-template-columns: repeat(1, 1fr)
+//     }
+// }

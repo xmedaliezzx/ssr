@@ -1,0 +1,33 @@
+<div class="wrapper">
+    <div class="title">
+        Que Disent-Ils De Nous ?
+    </div>
+
+
+    <div class="card">
+
+        <p-carousel [value]="products" [numVisible]="pageSize" [responsiveOptions]="responsiveOptions" [numScroll]="1"
+            [circular]="false" autoPlayInterval="3000">
+
+            <ng-template let-product pTemplate="item">
+                <img class="image" src="/assets/images/comment_tag.png">
+                <div class="single-feed">
+                   
+                    <div class="header">
+                        <div class="image-block">
+                            <img src="https://primefaces.org/cdn/primeng/images/demo/product/{{ product.image }}"
+                                [alt]="product.name" class="thumbnail-img" />
+                        </div>
+                        <div class="title-block">
+                            <span>{{product.name}} </span>
+                            <span>{{product.jobTitle}} </span>
+                        </div>
+                    </div>
+                    <div class="content-body">
+                        <p> {{product.description}} </p>
+                    </div>
+                </div>
+            </ng-template>
+        </p-carousel>
+    </div>
+</div>

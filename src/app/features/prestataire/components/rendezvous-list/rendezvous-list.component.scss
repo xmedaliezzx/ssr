@@ -1,0 +1,117 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.boxs {
+  overflow-y: auto;
+  overflow: auto;
+  max-height: 97vh;
+}
+.boxs::-webkit-scrollbar {
+  width: 0px;
+}
+.header {
+  width: 75% !important;
+  margin-bottom: 10px;
+}
+.title {
+  font-size: 19px;
+  color: #2e3c66;
+  font-family: buttershine;
+}
+.box1 {
+  width: 100%;
+  height: max-content;
+  background-color: #ffffff;
+  box-shadow: 0px 3px 6px #00000029 !important;
+  border-radius: 11px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  padding: 28px;
+  font-size: 15px;
+}
+
+::ng-deep {
+  .btn-round {
+    border-radius: 30px !important;
+  }
+}
+
+.margin-5 {
+  margin-bottom: 5px;
+}
+
+.link {
+  font-size: 16px;
+  color: #1b8793;
+  font-family: tommy_Regular;
+}
+
+.profilePhoto {
+  display: flex;
+  flex: 0.2;
+}
+
+.info {
+  flex: 0.9;
+  font-size: 14px;
+  color: #2e3c66;
+  font-family: tommy_Regular;
+  line-height: 20px;
+}
+.imageprofile {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.name {
+  font-family: tommy_Medium;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.date {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.dateimage {
+  width: 16px;
+  margin-right: 8px;
+}
+.time {
+  flex: 0.5;
+  display: flex;
+  align-items: center;
+}
+.timeimage {
+  margin-right: 8px;
+}
+.empl {
+  display: flex;
+  align-items: flex-start;
+}
+
+@media (max-width: 450px) {
+  .profilePhoto {
+    justify-content: center;
+ 
+  }
+.imageprofile{
+  width: 70px;
+  height: 70px;
+}
+
+.box1{
+flex-direction: column;
+  justify-content: center;
+
+}
+}

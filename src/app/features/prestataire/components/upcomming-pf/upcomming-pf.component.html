@@ -1,0 +1,47 @@
+<div class="wrapper">
+    <div class="header">
+        <div class="title">
+            Rendez-vous prochainement
+        </div>
+
+    </div>
+    <div *ngFor="let o of objectEntries(objects)">
+        <div class="box1">
+            <div class="profilePhoto">
+                <img class="imageprofile" style="width: 44px; height: 44px; border-radius: 50%; object-fit: cover;"
+                    src="../../../../../assets/images/girl2.jpg">
+            </div>
+            <div class="info">
+                <div style="display: flex;">
+                    <div style="font-family: tommy_Bold; flex: 1;" class="name">
+                        Foulen Fouleni
+                    </div>
+                    <div class="date" style="flex: 1; display: flex; align-items: center;">
+                        <img style="width: 14px; margin-right: 5px;" src="../../../../../assets/icons/calendar.svg">
+                        10/03/2023
+                    </div>
+                    <div class="time" style="flex: 0.5; display: flex; align-items: center;">
+                        <img style="width: 15px; margin-right: 5px;" src="../../../../../assets/icons/time.svg">
+                        14:30
+                    </div>
+                </div>
+                <div style="margin-bottom: 27px" class="soins"> Femme 25 ans</div>
+
+                <div *ngFor="let entry of objectEntries(o[1])">
+                    <div class="soins">
+                        <span style="font-family: tommy_Bold;"> {{ entry[0] }} : </span> {{ entry[1] }}
+                    </div>
+                   
+                </div>
+
+                <div class="ARBtns">
+                    <div class="ABtn">Annuler le rendez-vous</div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+</div>

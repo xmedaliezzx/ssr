@@ -1,0 +1,137 @@
+.wrapper {
+    // width: max-content;
+    // margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 10px
+}
+
+.title {
+    font-size: 22px;
+    color: #2E3C66;
+    font-family: buttershine;
+
+}
+
+
+    // .btn-round {
+    //     border-radius: 30px !important;
+
+    // }
+
+
+
+.link {
+    font-size: 16px;
+    color: #1B8793;
+    font-family: tommy_Regular;
+
+}
+
+
+.box1 {
+    width: 90%;
+    height: max-content;
+    background-color: #FFFFFF;
+    box-shadow: 0px 3px 6px #00000029 !important;
+    border-radius: 11px;
+    margin-bottom: 10px;
+    display: flex;
+    // flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+.box2 {
+    width: 90%;
+    height: max-content;
+    background-color: #FFFFFF;
+    box-shadow: 0px 3px 6px #00000029 !important;
+    border-radius: 11px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    font-size: 15px;
+}
+
+.buttons {
+    display: flex;
+}
+
+.text {
+    font-size:clamp(13px,70%,15px);
+    font-family: tommy_Regular;
+    color: #2E3C66;
+}
+
+.footer {
+    background-color: #DDDFE6;
+    width: 100%;
+}
+
+.event {
+    font-size: 15px;
+    font-family: tommy_Regular;
+}
+
+.date {
+    display: flex;
+    justify-content: space-between
+}
+
+.soins {
+    display: flex;
+}
+
+.day {
+    width: 74px;
+    height: 25px;
+    background-color: #2E3C66;
+    border-radius: 11px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 7px ;
+}
+
+.month {
+    width: 74px;
+    height: 25px;
+    background-color: #ffffff;
+    border: 1px solid #2E3C66;
+    border-radius: 11px;
+    color: #2E3C66;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.active{
+    width: 74px;
+    height: 25px;
+    background-color: #2E3C66;
+    border-radius: 11px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 7px ; 
+    margin-left: 7px ;
+}
+

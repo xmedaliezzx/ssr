@@ -1,0 +1,55 @@
+<div class="left">
+    <div class="title">Bienvenue Foulen Ben Foulen</div>
+    <div (click)="perso()" class="bigSection">
+        Informations Personnelles
+        <img style="margin-left: 18px;" src="../../../../../assets/icons/arrowForm.svg">
+    </div>
+    <hr>
+    <div class="bigSection">
+        Informations Du Compte
+       
+    </div>
+    <div (click)="password()" class="smallSection">
+        Changer mot de passe
+        <img style="margin-left: 18px;" src="../../../../../assets/icons/arrowForm.svg">
+    </div>
+    
+    <div (click)="email()" class="smallSection">
+        Changer email
+        <img style="margin-left: 18px;" src="../../../../../assets/icons/arrowForm.svg">
+    </div>
+    
+    <div (click)="phone()" class="smallSection">
+        Changer numéro de téléphone
+        <img style="margin-left: 18px;" src="../../../../../assets/icons/arrowForm.svg">
+    </div>
+   
+    <div (click)="manageAccount()" class="bigSection">
+        Gestion Du Compte
+        <img style="margin-left: 18px;" src="../../../../../assets/icons/arrowForm.svg">
+    </div>
+    <!-- <div (click)="desac()" class="smallSection">
+        Désactivation du compte
+        <img style="margin-left: 18px;" src="../../../../../assets/icons/arrowForm.svg">
+    </div> -->
+    <hr>
+    <!-- <div (click)="dele()" class="smallSection">
+        Suppression du compte
+        <img style="margin-left: 18px;" src="../../../../../assets/icons/arrowForm.svg">
+    </div> -->
+    
+    <div (click)="rec()" class="bigSection">
+        Réclamations
+        <img style="margin-left: 18px;" src="../../../../../assets/icons/arrowForm.svg">
+    </div>
+
+    <hr>
+    <div (click)="OtherMember()" class="bigSection">
+        Autre Mmebre
+        <!-- <img style="margin-left: 18px;" src="../../../../../assets/icons/arrowForm.svg"> -->
+</div>
+<p-button type="submit" (click)="logout()" [loading]="PasswordBTNLoading"
+styleClass="btn-deconnecter"><i class="fa-solid fa-right-from-bracket"></i>Déconnecter du
+compte</p-button>
+
+

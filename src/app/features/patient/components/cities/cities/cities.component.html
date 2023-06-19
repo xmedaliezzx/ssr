@@ -1,0 +1,14 @@
+<div class="wrapper">
+    <div class="title">
+        Top Villes De Recherche
+    </div>
+    <div class="cities"    >
+        <div  *ngFor = "let city of cities" [ngClass]="{'city2': city === 'Monastir', 'city': city !== 'Monastir'}">
+            {{city}}
+            <div *ngIf="city == 'Monastir'" class="prestataires">
+                450 prestataires
+            </div>
+        </div>
+
+    </div>
+</div>

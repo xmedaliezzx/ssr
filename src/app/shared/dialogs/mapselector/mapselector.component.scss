@@ -1,0 +1,20 @@
+.center-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+::ng-deep {
+  .p-button-success {
+    margin:0.2rem;
+    padding: 0.5rem 0.5rem;
+    font-size: 0.7rem;
+  }
+  .p-button-help {
+    margin:0.2rem;
+    padding: 0.5rem 0.5rem;
+    font-size: 0.7rem;
+  }
+}

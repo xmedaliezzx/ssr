@@ -1,0 +1,78 @@
+<div class="wrapper">
+    <div class="smallTitle">
+        Quel type de soins avez-vous besoin ?
+    </div>
+
+
+
+    <div class="box">
+        <div class=" radiobtn flex align-items-center">
+            <p-radioButton name="pizza" value="Cheese" [(ngModel)]="ingredient" inputId="ingredient1"></p-radioButton>
+            <label for="ingredient1" class="choice ml-2">Garde domicileee</label>
+        </div>
+
+        <div class="radiobtn flex align-items-center">
+            <p-radioButton name="pizza" value="Mushroom" [(ngModel)]="ingredient" inputId="ingredient2"></p-radioButton>
+            <label for="ingredient2" class="choice ml-2">Soins à domicile</label>
+        </div>
+    </div>
+    <div class="checkboxList">
+        <div class="checkboxChoice flex align-items-center gap-1">
+            <p-checkbox name="group1" value="New York" [(ngModel)]="selectedCities" inputId="ny"></p-checkbox>
+            <label for="ny">Garde normal (Patient autonome)</label>
+        </div>
+
+        <div class="checkboxChoice flex align-items-center gap-1">
+            <p-checkbox name="group1" value="San Francisco" [(ngModel)]="selectedCities" inputId="sf"></p-checkbox>
+            <label for="sf">Garde rapprochée (surveillance rapprochée)</label>
+        </div>
+
+        <div class="checkboxChoice flex align-items-center gap-1">
+            <p-checkbox name="group1" value="Los Angeles" [(ngModel)]="selectedCities" inputId="la"></p-checkbox>
+            <label for="la">Gardien nouveau-né</label>
+        </div>
+    </div>
+    <div class="description">
+        <div class="paragraph">
+            <span class="gardeType">
+                Garde normal :
+            </span>
+            
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et
+                dolore magna aliquyam
+           
+        </div>
+        <div class="paragraph">
+            <span class="gardeType">
+                Garde rapprochée :
+            </span>
+            
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                ipsum
+                dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                invidunt ut labore et dolore magna
+            
+        </div>
+        <div class="paragraph">
+            <span class="gardeType">
+                Gardien nouveau-né :
+            </span>
+            
+                Lorem ipsum dolor sit amet, consetetur sadipscing
+                elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                voluptua. At
+                vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
+                est
+                Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                eirmod
+                tempor invidunt ut labore et dolore
+          
+        </div>
+    </div>
+</div>

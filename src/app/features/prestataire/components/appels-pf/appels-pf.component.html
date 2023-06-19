@@ -1,0 +1,89 @@
+<div class="wrapper">
+    <div class="header">
+        <div class="title">
+            Appels immédiats
+        </div>
+
+    </div>
+    <div *ngIf="!checked" class="message">
+        Être disponible pour recevoir des appels immédiats
+    </div>
+    <div *ngIf="checked && (Accepter===true) && (Reffuser===false)" class="box2">
+        <div *ngIf="!loading" >
+            <ng-lottie [options]="options1"></ng-lottie>
+        </div>
+        <div *ngIf="loading && !oops" class="lott" >
+            <ng-lottie [options]="options2" width="100%" height="100%" ></ng-lottie>
+        </div>
+        <div *ngIf="image && oops" class="image">
+            <img src="../../../../../assets/images/accept.svg">
+        </div>
+    </div>
+    <div *ngIf="checked && (Accepter===false) && (Reffuser===true)" class="box3">
+
+        <div *ngIf="!loading" class="inside">
+            <ng-lottie [options]="options1"></ng-lottie>
+        </div>
+        <div *ngIf="loading && !oops" class="lott" >
+            <ng-lottie [options]="options3" width="100%" height="100%" ></ng-lottie>
+        </div>
+        <div *ngIf="image && oops" class="image">
+            <img src="../../../../../assets/images/refus.svg">
+        </div>
+    </div>
+    <div *ngIf="checked && (Accepter===false) && (Reffuser===false)" class="box1">
+        <div class="profilePhoto">
+            <img style="width: 44px; height: 44px; border-radius: 50%; object-fit: cover;"
+                src="../../../../../assets/images/girl2.jpg">
+        </div>
+        <div class="info">
+            <div style="display: flex;">
+                <div style="flex: 3;">
+                    <div style="font-family: tommy_Bold;" class="name">
+                        Foulen Fouleni
+                    </div>
+                    <div style="margin-bottom: 27px" class="soins"> Femme 25 ans</div>
+
+
+                    <div *ngFor="let entry of objectEntries(objects.object1)">
+                        <div class="soins">
+                            <span style="font-family: tommy_Bold;"> {{ entry[0] }} : </span> {{ entry[1] }}
+                        </div>
+                    </div>
+                </div>
+                <div style="flex: 1;height: 5px;" class="timer">
+                    <div class="inside">
+                        <ng-lottie [options]="options"></ng-lottie>
+                    </div>
+                </div>
+            </div>
+            <div class="money "><span class="Soinsmoney"> Soins </span>
+                <div class="Soinsprix">75 TND</div>
+            </div>
+            <div class="distance "> <span class="distanceLoin">Loin de vous</span> 12 Km</div>
+
+            <div class="DéplacementradioButton">
+                <div>
+                    <p-radioButton name="free" value="not free" [(ngModel)]="free"
+                        inputId="ingredient1"></p-radioButton>
+                    <label for="ingredient2" class="ml-2"
+                        [ngClass]="free  == 'not free'? 'notfree' : ' free'">Déplacement 15 TND</label>
+                </div>
+                <div class="  radioButton">
+                    <p-radioButton name="free" value="free" [(ngModel)]="free" inputId="ingredient2"></p-radioButton>
+                    <label for="ingredient3" class="ml-2" [ngClass]="free == 'free'? 'notfree' : ' free'"> Déplacement
+                        gratuit</label>
+                </div>
+            </div>
+
+
+            <div class="ARBtns">
+                <div (click)="Accept()" class="ABtn">Accepter</div>
+                <div (click)="Refuse()" class="RBtn">Refuser</div>
+            </div>
+
+        </div>
+
+
+    </div>
+</div>

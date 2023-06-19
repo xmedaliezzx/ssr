@@ -1,0 +1,57 @@
+.card {
+  background-color: var(--blanc);
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px #00000029 !important;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  margin-right: 5px;
+  align-items: center;
+  justify-content: center;
+  height: 276px;
+}
+.title {
+  color: var(--blue-2);
+  font-size: 15px;
+  font-family: buttershine;
+  margin-bottom: 30px;
+}
+.statistic {
+  width: 90%;
+  max-width: 100px;
+}
+.labels {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  // overflow: hidden;
+  // white-space: nowrap;
+  .label {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+     overflow: hidden;
+  white-space: nowrap;
+  }
+  .circle {
+    color: var(--blue-2);
+    font-family: tommy_Medium;
+    font-size: 16px;
+  }
+  .circleGreen {
+    color: var(--green);
+    font-family: tommy_Medium;
+    font-size: 16px;
+  }
+  .fa-circle {
+    margin-right: 5px;
+  }
+  span {
+  }
+}
+@media screen and (max-width: 475px) {
+}

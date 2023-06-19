@@ -1,0 +1,129 @@
+
+
+.wrapper {
+   // width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //margin-left: 50px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 10px
+}
+
+.title {
+    font-size: 22px;
+    color: #2E3C66;
+    font-family: buttershine;
+
+}
+
+// ::ng-deep {
+//     .btn-round {
+//         border-radius: 30px !important;
+
+//     }
+// }
+
+
+
+
+
+.margin-5 {
+    margin-bottom: 5px;
+}
+
+.link {
+    font-size: 16px;
+    color: #1B8793;
+    font-family: tommy_Regular;
+
+}
+
+
+.box1 {
+    width: 90%;
+    height: max-content;
+    background-color: #FFFFFF;
+    box-shadow: 0px 3px 6px #00000029 !important;
+    border-radius: 11px;
+    margin-bottom: 10px;
+    display: flex;
+    // flex-direction: column;
+    //align-items: center;
+    justify-content: center;
+    padding: 18px;
+    font-size: 15px;
+}
+
+.profilePhoto {
+    display: flex;
+    flex: 0.2
+}
+
+.info {
+    flex: 0.9;
+    font-size:clamp(12px,70%,14px);
+    color: #2E3C66;
+    font-family: tommy_Regular;
+    line-height: 22px;
+
+
+}
+
+.timer {
+    // flex: 1
+
+}
+
+.ARBtns {
+    display: flex;
+    font-size: 13px;
+    font-family: tommy_Regular;
+    margin-top: 9px
+}
+
+.ABtn {
+    width: 113px;
+    height: 44px;
+    margin-right: 10px;
+    background: #1B8793;
+    border-radius: 11px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.RBtn {
+    width: 113px;
+    height: 44px;
+    border-radius: 11px;
+    background: #B30006;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  .free {
+    color: #B3B3B3;
+    margin-left: 2px;
+    font-family: tommy_Regular;
+    font-size: 12px;
+  }
+  .notfree {
+    color: #2E3C66;
+    margin-left: 2px;
+    font-family: tommy_Regular;
+    font-size: 14px;
+  }

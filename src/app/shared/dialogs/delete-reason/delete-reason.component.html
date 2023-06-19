@@ -1,0 +1,49 @@
+<div class="wrapper">
+  <div class="card">
+
+
+    <div class="reasons flex justify-content-evenly">
+      <div class="title">
+        Supprimer le compte
+      </div>
+      <div class="bigTitle">
+        Veuillez sélectionner une raison
+      </div>
+      <div class="besoin flex flex-column gap-3">
+        <div *ngFor="let reason of reasons" class="field-checkbox">
+          <p-radioButton [inputId]="reason.key" name="reason" [value]="reason"
+            [(ngModel)]="selectedReason"></p-radioButton>
+          <label [for]="reason.key" class="ml-2">{{ reason }}</label>
+        </div>
+      </div>
+      <div style="margin-bottom: 15px;" class=" flex justify-content-center">
+        <textarea rows="3" cols="30" pInputTextarea [autoResize]="true"></textarea>
+      </div>
+      <div class="delete" style="display: flex; align-items: baseline;">
+        <p-button type="submit" styleClass="btn-deactivate" (click)="supprimer()">
+          Supprimer</p-button>
+        <p-button type="submit" (click)="close('deactivationReasonModal')" styleClass="btn-Delete">Annuler</p-button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- <p-dialog
+  header="Header"
+  contentStyleClass="background p-2"
+  [showHeader]="false"
+  [style]="{ width:'100%', maxWidth:  '550px'}"
+  *ngIf="deactivationConfirmationModal"
+  [(visible)]="deactivationConfirmationModal"
+  [modal]="true"
+  [draggable]="false"
+  [resizable]="false"
+  (onHide)="close('deactivationConfirmationModal')"
+>
+  <app-deactivation-confirmation></app-deactivation-confirmation>
+</p-dialog> -->

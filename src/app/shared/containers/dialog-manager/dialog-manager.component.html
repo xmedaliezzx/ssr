@@ -1,0 +1,191 @@
+<div style="z-index: 1200">
+  <!-- <button (click)="open('mapselectorComponentModal')">open prestataire Rating </button> -->
+
+
+
+  <!-- <button (click)="open('soinsChoixModal')">open soins Choix</button>
+  <button (click)="open('livraisonChoixModal')">open livraison Choix</button>
+  <button (click)="open('AppointmentCancellledSuccessfulModal')">
+    open Appointment Cancellled Successful
+  </button>
+  <button (click)="open('BlockedAppointmentModal')">
+    open Blocked Appointment
+  </button>
+  <button (click)="open('NotificationReminderModal')">
+    open Notification Reminder
+  </button>
+  <button (click)="open('OutherMemberModal')">open Outhe Member</button>
+  <button (click)="open('ReportingListModal')">open Reporting List</button>
+  <button (click)="open('prestataireReportingListModal')">open Prestataire Reporting List</button>
+  <button (click)="open('prestataireCancelAppointementModal')">open prestataire Cancel Appointement</button>
+  <button (click)="open('warningExpirationAccountModal')">open Warning Expiration Account</button>
+  <button (click)="open('warningTrialPeriodModal')">open Warning Trial Account</button>
+  <button (click)="open('patientMedicalCardModal')">open Patient Medical Card</button>
+
+  <button (click)="open('SuccessfulBookingModal')">
+    open Successful Booking
+  </button>
+  <button (click)="open('WorningBlockedAppointmentModal')">
+    open Worning Blocked Appointment
+  </button>
+
+  <button (click)="open('notAvailableAppointmentModal')">
+    open Not Available Appointment
+  </button>
+  <button (click)="open('deleteMemberModal')">open delete Member</button> -->
+
+</div>
+<div class="dialog">
+
+  <p-dialog header="Header" [showHeader]="false" *ngIf="rdvType" [(visible)]="rdvType" [modal]="true"
+    [draggable]="false" [resizable]="false" (onHide)="close('rdvTypeModal')">
+    <p class="m-0">rdvTypeModal</p>
+  </p-dialog>
+
+  <p-dialog header="Header" [showHeader]="false" *ngIf="anotherModal" [(visible)]="anotherModal" [modal]="true"
+    [style]="{ width: '50vw' }" [draggable]="false" [resizable]="false" (onHide)="close('anotherModal')">
+    <p class="m-0">anotherModal</p>
+  </p-dialog>
+
+  <p-dialog contentStyleClass="background p-2" [style]="{ width:'100%', maxWidth:  '350px' }" header="Header"
+    [showHeader]="false" *ngIf="prestataireRatingModal" [(visible)]="prestataireRatingModal" [modal]="true"
+    [draggable]="false" [resizable]="false" (onHide)="close('prestataireRatingModal')">
+    <app-prestataire-rating></app-prestataire-rating>
+  </p-dialog>
+
+  <p-dialog contentStyleClass="background p-2" [style]="{ width:'100%', maxWidth:  '350px' }" header="Header"
+    [showHeader]="false" *ngIf="mapselectorComponentModal" [(visible)]="mapselectorComponentModal" [modal]="true"
+    [draggable]="false" [resizable]="false" [dismissableMask]="false" (onHide)="close('mapselectorComponentModal')">
+    <app-mapselector></app-mapselector>
+  </p-dialog>
+
+  <p-dialog header="Header" contentStyleClass="background p-2" [style]="{ width:'100%', maxWidth:  '550px'}"
+    [showHeader]="false" *ngIf="soinsChoixModal" [(visible)]="soinsChoixModal" [modal]="true" [draggable]="false"
+    [resizable]="false" (onHide)="close('soinsChoixModal')">
+    <app-soins-choix></app-soins-choix>
+  </p-dialog>
+
+  <p-dialog header="Header" contentStyleClass="background p-2" [style]="{ width:'100%', maxWidth:  '550px'}"
+    [showHeader]="false" *ngIf="livraisonChoixModal" [(visible)]="livraisonChoixModal" [modal]="true"
+    [draggable]="false" [resizable]="false" (onHide)="close('livraisonChoixModal')">
+    <app-livraison-choix></app-livraison-choix>
+  </p-dialog>
+
+  <p-dialog header="Header" contentStyleClass="background p-2" [showHeader]="false"
+    *ngIf="AppointmentCancellledSuccessfulModal" [(visible)]="AppointmentCancellledSuccessfulModal"
+    [style]="{ width:'100%', maxWidth:'550px'}" [modal]="true" [draggable]="false" [resizable]="false"
+    (onHide)="close('AppointmentCancellledSuccessfulModal')">
+    <app-appointment-cancellled-successful></app-appointment-cancellled-successful>
+  </p-dialog>
+
+  <p-dialog header="Header" contentStyleClass="background p-2" [showHeader]="false"
+    *ngIf="prestataireCancelAppointementModal" [(visible)]="prestataireCancelAppointementModal"
+    [style]="{ width:'100%', maxWidth:'550px'}" [modal]="true" [draggable]="false" [resizable]="false"
+    (onHide)="close('prestataireCancelAppointementModal')">
+    <app-prestataire-cancel-appointement></app-prestataire-cancel-appointement>
+  </p-dialog>
+
+  <p-dialog header="Header" contentStyleClass="background p-2" [showHeader]="false"
+    *ngIf="warningExpirationAccountModal" [(visible)]="warningExpirationAccountModal" [modal]="true" [draggable]="false"
+    [resizable]="false" (onHide)="close('warningExpirationAccountModal')">
+    <app-warning-expiration-account></app-warning-expiration-account>
+  </p-dialog>
+
+  <p-dialog header="Header" contentStyleClass="background p-2" [showHeader]="false" *ngIf="warningTrialPeriodModal"
+    [(visible)]="warningTrialPeriodModal" [modal]="true" [draggable]="false" [resizable]="false"
+    (onHide)="close('warningTrialPeriodModal')">
+    <app-warning-trial-period></app-warning-trial-period>
+  </p-dialog>
+
+  <p-dialog header="Header" contentStyleClass="background p-2" [showHeader]="false" *ngIf="patientMedicalCardModal"
+    [(visible)]="patientMedicalCardModal" [modal]="true" [draggable]="false" [resizable]="false"
+    (onHide)="close('patientMedicalCardModal')">
+    <app-patient-medical-card></app-patient-medical-card>
+  </p-dialog>
+
+  <!-- delete member dialog -->
+  <p-dialog header="Header" contentStyleClass="background p-2" [showHeader]="false" *ngIf="deleteMemberModal"
+    [(visible)]="deleteMemberModal" [modal]="true" [draggable]="false" [resizable]="false"
+    (onHide)="close('deleteMemberModal')">
+    <app-delete-member></app-delete-member>
+  </p-dialog>
+
+  <p-dialog header="Header" contentStyleClass="background p-2" [showHeader]="false"
+    [style]="{ width:'100%', maxWidth:  '550px'}" *ngIf="BlockedAppointmentModal" [(visible)]="BlockedAppointmentModal"
+    [modal]="true" [draggable]="false" [resizable]="false" (onHide)="close('BlockedAppointmentModal')">
+    <app-blocked-appointment></app-blocked-appointment>
+  </p-dialog>
+
+  <p-dialog header="Header" contentStyleClass="p-2 " [showHeader]="false" *ngIf="NotificationReminderModal"
+    [style]="{ width:'100%', maxWidth:  '550px'}" [(visible)]="NotificationReminderModal" [modal]="true"
+    [draggable]="false" [resizable]="false" (onHide)="close('NotificationReminderModal')">
+    <app-notification-reminder></app-notification-reminder>
+  </p-dialog>
+
+  <p-dialog header="Header" contentStyleClass="background p-2" [showHeader]="false"
+    [style]="{width:'100%', maxWidth: '350px' }" *ngIf="OutherMemberModal" [(visible)]="OutherMemberModal"
+    [modal]="true" [draggable]="false" [resizable]="false" (onHide)="close('OutherMemberModal')">
+    <app-outher-member></app-outher-member>
+  </p-dialog>
+
+  <p-dialog header="Header" contentStyleClass="background p-2" [showHeader]="false"
+    [style]="{ width:'100%', maxWidth: '550px' }" *ngIf="ReportingListModal" [(visible)]="ReportingListModal"
+    [modal]="true" [draggable]="false" [resizable]="false" (onHide)="close('ReportingListModal')">
+    <app-reporting-list></app-reporting-list>
+  </p-dialog>
+
+  <p-dialog header="Header" contentStyleClass="background p-2" [showHeader]="false"
+    [style]="{ width:'100%', maxWidth: '550px' }" *ngIf="prestataireReportingListModal"
+    [(visible)]="prestataireReportingListModal" [modal]="true" [draggable]="false" [resizable]="false"
+    (onHide)="close('prestataireReportingListModal')">
+    <app-prestataire-reporting-list></app-prestataire-reporting-list>
+  </p-dialog>
+
+  <p-dialog header="Header" contentStyleClass="background p-2" [style]="{ width:'100%', maxWidth:  '550px'}"
+    [showHeader]="false" *ngIf="SuccessfulBookingModal" [(visible)]="SuccessfulBookingModal" [modal]="true"
+    [draggable]="false" [resizable]="false" (onHide)="close('SuccessfulBookingModal')">
+    <app-successful-booking></app-successful-booking>
+  </p-dialog>
+  <p-dialog header="Header" contentStyleClass="background p-2" [style]="{ width:'100%', maxWidth:'550px'}"
+    [showHeader]="false" *ngIf="WorningBlockedAppointmentModal" [(visible)]="WorningBlockedAppointmentModal"
+    [modal]="true" [draggable]="false" [resizable]="false" (onHide)="close('WorningBlockedAppointmentModal')">
+    <app-worning-blocked-appointment></app-worning-blocked-appointment>
+  </p-dialog>
+
+
+  <p-dialog header="Header" contentStyleClass="background p-2" [showHeader]="false"
+    [style]="{ width:'100%', maxWidth:'550px'}" *ngIf="notAvailableAppointmentModal"
+    [(visible)]="notAvailableAppointmentModal" [modal]="true" [draggable]="false" [resizable]="false"
+    (onHide)="close('notAvailableAppointmentModal')">
+    <app-not-available-appointment></app-not-available-appointment>
+  </p-dialog>
+
+  <p-dialog header="Header" contentStyleClass="background p-2" [showHeader]="false"
+    [style]="{ width:'100%', maxWidth:  '550px'}" *ngIf="deactivationReasonModal" [(visible)]="deactivationReasonModal"
+    [modal]="true" [draggable]="false" [resizable]="false" (onHide)="close('deactivationReasonModal')">
+    <app-deactivation-reason></app-deactivation-reason>
+  </p-dialog>
+
+
+  <p-dialog header="Header" contentStyleClass="background p-2" [showHeader]="false"
+    [style]="{ width:'100%', maxWidth:  '550px'}" *ngIf="deleteReasonModal" [(visible)]="deleteReasonModal"
+    [modal]="true" [draggable]="false" [resizable]="false" (onHide)="close('deleteReasonModal')">
+    <app-delete-reason></app-delete-reason>
+  </p-dialog>
+
+  <p-dialog header="Header" contentStyleClass="background p-2" [showHeader]="false"
+    [style]="{ width:'100%', maxWidth:  '550px'}" *ngIf="deactivationConfirmationModal"
+    [(visible)]="deactivationConfirmationModal" [modal]="true" [draggable]="false" [resizable]="false"
+    (onHide)="close('deactivationConfirmationModal')">
+    <app-deactivation-confirmation></app-deactivation-confirmation>
+  </p-dialog>
+
+
+  <p-dialog header="Header" contentStyleClass="background p-2" [showHeader]="false"
+    [style]="{ width:'100%', maxWidth:  '550px'}" *ngIf="deleteAccountModal" [(visible)]="deleteAccountModal"
+    [modal]="true" [draggable]="false" [resizable]="false" (onHide)="close('deleteAccountModal')">
+    <app-delete-account></app-delete-account>
+  </p-dialog>
+
+
+</div>

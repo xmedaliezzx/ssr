@@ -1,0 +1,72 @@
+<div class="wrapper">
+  <div class="lottie">
+    <div class="inside">
+      <ng-lottie [options]="options"></ng-lottie>
+    </div>
+  </div>
+  <div>
+    <div class="footer">
+      <div class="block1">
+        <img class="logo" src="/assets/icons/logo.svg" />
+        <div class="link">2 Rue Massicault, Sousse 4000</div>
+        <div class="link">Téléphone : 58 888 888</div>
+        <div class="socialMedia">
+          <img src="/assets/icons/facebook.svg" />
+          <img src="/assets/icons/instagram.svg" />
+          <img src="/assets/icons/twitter.svg" />
+          <img src="/assets/icons/linkedin.svg" />
+        </div>
+        <div class="btn">
+          <p>4/5</p>
+          <img class="rating" src="/assets/icons/rating.svg" />
+          <p>+ 6 000 avis sur google</p>
+        </div>
+      </div>
+      <div class="block2-1">
+        <div class="title">Nos Services</div>
+        <div class="link">Les professionnels</div>
+        <div class="link">Infirmière à domicile</div>
+        <div class="link">Les soins</div>
+        <div class="link">Services aux entreprises</div>
+        <div class="link">
+          Services aux établissements<br />
+          de santé
+        </div>
+        <div class="link">Annuaire professionnel</div>
+      </div>
+      <div class="block2-2">
+        <div class="title">Couverture Territoriale</div>
+        <div class="link">Couverture infirmières libérales</div>
+        <div class="link">Couverture kinésithérapeutes libéraux</div>
+        <div class="link">Couverture sages-femmes libérales</div>
+        <div class="link">Couverture ambulances</div>
+        <div class="link">Couverture Médecins généralistes</div>
+      </div>
+      <div class="block2-3">
+        <div class="title">Besoin D'aide ?</div>
+        <div class="link">FAQ Patient</div>
+        <div class="link">FAQ Établissement de santé</div>
+        <div class="link">Nous contacter</div>
+        <div class="link">Tarifs des soins à domicile</div>
+      </div>
+      <div class="block3">
+        <div class="title" style="font-family: tommy_Bold">عاونّي</div>
+        <div class="link">Nous rejoindre</div>
+        <div class="link">Presse</div>
+        <div class="link">Blog</div>
+      </div>
+      <div class="block3-1">
+        <div class="title" style="font-family: tommy_Bold">Language</div>
+
+        <p-dropdown [options]="languages" [ngModel]="selectedLang" optionLabel="name" (onChange)="changeLang($event)"></p-dropdown>
+
+      </div>
+    </div>
+    <hr />
+  </div>
+  <div class="copyright">
+    Copyright
+    <img style="width: 14px" src="/assets/images/copyright_symbol.png" />
+    Duetodata.com - Tous droits réservés
+  </div>
+</div>

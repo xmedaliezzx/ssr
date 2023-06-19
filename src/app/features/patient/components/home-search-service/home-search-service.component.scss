@@ -1,0 +1,133 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F1FBFC;
+    padding: 5px;
+    padding-top: 40px;
+    grid-gap: 10px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+
+    .left-part {
+        width: 100%;
+    }
+}
+
+.grid-item-img {
+    left: 1010px;
+}
+
+.grid-item {
+    padding: 20px;
+}
+
+.title {
+    font-family: buttershine;
+    font-size: clamp(20px, 4vw,50px);
+    color: #2E3C66;
+    // text-align: left;
+    line-height: clamp(2rem,4vw,4rem);
+}
+
+.lorem-ipsum {
+    font-family: tommy_Regular;
+    font-size: clamp(10px,4vw,18px);
+    line-height: clamp(1.2rem,4vw,2rem);
+    //  text-align: left;
+    
+}
+
+
+img {
+    width: 100%;
+    max-width: 600px;
+}
+
+.btn {
+    background-color: var(--green);
+    border-radius: 5px;
+    width: 123px;
+    height: 38px;
+    border: 0;
+    color: var(--white);
+    margin-left: 20px;
+}
+
+::ng-deep  .select-list {
+    display: grid;
+    max-width: 600px;
+    width: 100%;
+
+     .p-dropdown-panel .p-dropdown-items .p-dropdown-item {
+        height: 50px;
+        border-radius: 5px;
+    }
+    
+   .p-dropdown-panel .p-dropdown-items .p-dropdown-item.p-highlight {
+        color: var(--blue-2);
+        background: var(--green-light);
+        border-radius: 5px;
+    }
+    
+   .p-dropdown-panel .p-dropdown-items .p-dropdown-item:hover {
+        background: var(--green-light) !important;
+        border-radius: 5px;
+    }
+    
+     .p-dropdown {
+        box-shadow: none !important;
+        border: 1px solid #ced4da !important;
+        border-radius: 5px;
+        background: none;
+    }
+    
+    .p-dropdown-items-wrapper .p-dropdown-items {
+        max-width: 600px;
+        width: 100%;
+        border-radius: 5px;
+        padding: 0 !important;
+    }
+    
+
+}
+
+
+
+.lottie {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.lottie .inside {
+    width: 104px;
+    height: 104px;
+}
+
+@media (max-width: 750px) {
+    .box {
+        display: flex;
+        flex-direction: column;
+
+        .right-part {
+            display: none;
+        }
+    }
+    .lottie {
+        display: none;
+    }
+}
+
+@media (min-width: 750px) {
+    .box {
+        display: flex;
+
+        .left-part {
+            width: 50%;
+        }
+    }
+}

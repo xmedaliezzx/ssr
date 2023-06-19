@@ -1,0 +1,47 @@
+<div class="wrapper">
+  <div class="box">
+    <div class="left-part">
+      <div class="grid-item">
+        <p class="title">
+          {{'Soins Spéciaux' | translate}}
+          <br />
+         {{'Et Meilleur Traitements' | translate}}
+        </p>
+        <p class="lorem-ipsum">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+          rebum.
+        </p>
+
+        <p-dropdown
+          class="select-list"
+          [options]="services"
+          [(ngModel)]="selectedService"
+        >
+          <ng-template let-item pTemplate="selectedItem">
+            {{ item }}
+          </ng-template>
+          <ng-template let-subItem pTemplate="item">
+            <div class="item-drop">
+              <span class="item-value">{{ subItem }} </span>
+            </div>
+          </ng-template>
+        </p-dropdown>
+      </div>
+      <div class="search-btn">
+        <button class="btn">Rechercher</button>
+      </div>
+    </div>
+    <div class="right-part">
+      <div class="grid-item-img">
+        <img src="/assets/images/doc.png" />
+      </div>
+    </div>
+  </div>
+  <div class="lottie">
+    <div class="inside">
+      <ng-lottie [options]="options"></ng-lottie>
+    </div>
+  </div>
+</div>

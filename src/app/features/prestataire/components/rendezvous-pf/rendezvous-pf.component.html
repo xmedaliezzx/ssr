@@ -1,0 +1,104 @@
+<div class="wrapper">
+    <div class="header">
+        <div class="title">Demandes de rendez-vous</div>
+    </div>
+    <div class="section" style="
+        overflow: auto;
+        height: 72%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      ">
+       
+            <div class="box1">
+                <div class="profilePhoto">
+                    <img style="
+              width: 44px;
+              height: 44px;
+              border-radius: 50%;
+              object-fit: cover;
+            " src="https://images.unsplash.com/photo-1615109398623-88346a601842?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" />
+                </div>
+                <div class="info">
+                    <div style="display: flex">
+                        <div style="flex: 3">
+                            <div style="display: flex">
+                                <div class="date" style="flex: 1; display: flex; align-items: center">
+                                    <img style="width: 14px; margin-right: 5px"
+                                        src="../../../../../assets/icons/calendar.svg" />
+                                    10/03/2023
+                                </div>
+                                <div class="time" style="flex: 01; display: flex; align-items: center">
+                                    <img style="width: 15px; margin-right: 5px"
+                                        src="../../../../../assets/icons/time.svg" />
+                                    14:30
+                                </div>
+                            </div>
+                            <div style="display: flex">
+                                <div style="font-family: tommy_Bold; flex: 1" class="name">
+                                    Foulen Fouleni
+                                </div>
+                                <div class="date"
+                                    style="flex: 1; display: flex; align-items: center;margin-bottom: 27px">
+                                    Homme 25 ans
+                                </div>
+                            </div>
+                            <div *ngFor="let entry of objectEntries(objects.object1)">
+                                <div class="soins">
+                                    <span style="font-family: tommy_Bold;"> {{ entry[0] }} : </span> {{ entry[1] }}
+                                </div>
+                            </div>
+                        </div>
+                        <div style="flex: 1" class="timer">
+                            <div class="inside">
+                                <ng-lottie [options]="options"></ng-lottie>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="money" style="display: flex; align-items: center; margin-bottom: 8px">
+                        <span style="font-family: tommy_Bold; margin-right: 9px">
+                            Soins
+                        </span>
+                        <div style="
+                width: 98px;
+                height: 32px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid #2e3c66;
+                font-family: tommy_Medium;
+                border-radius: 11px;
+              ">
+                            75 TND
+                        </div>
+                    </div>
+                    <div class="distance">
+                        <span style="font-family: tommy_Bold">Loin de vous</span> 12 Km
+                    </div>
+
+                    <div class="flex flex-wrap gap-3">
+                        <div class="flex align-items-center radioButton">
+                            <p-radioButton name="free" value="not free" [(ngModel)]="free1"
+                                inputId="ingredient1"></p-radioButton>
+                            <label for="ingredient2" class="ml-2"
+                                [ngClass]="free1 == 'not free' ? 'notfree' : ' free'">Déplacement 15 TND</label>
+                        </div>
+                        <div class="flex align-items-center radioButton">
+                            <p-radioButton name="free" value="free" [(ngModel)]="free1"
+                                inputId="ingredient2"></p-radioButton>
+                            <label for="ingredient3" class="ml-2" [ngClass]="free1 == 'free' ? 'notfree' : ' free'">
+                                Déplacement gratuit</label>
+                        </div>
+                    </div>
+                    <div class="ARBtns">
+                        <div class="ABtn">Accepter</div>
+                        <div class="RBtn">Refuser</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+      
+    </div>

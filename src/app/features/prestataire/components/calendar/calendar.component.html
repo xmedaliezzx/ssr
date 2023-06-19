@@ -1,0 +1,34 @@
+<div class="wrapper">
+    <div class="header">
+        <div class="title">
+            Calendrier
+        </div>
+        <div (click)="calendar()" class="link">
+            <img src="../../../../../assets/icons/arrow.svg" >
+        </div>
+    </div>
+    <div>
+        <p-calendar styleClass="boxcalendar"  class="max-w-full " [(ngModel)]="date" [inline]="true" [showWeek]="true">
+
+            <ng-template pTemplate="footer">
+                <div class="topcalendar" >
+                    <div class="footercalendar">
+                        <div class="event">
+                            <div class="date">
+                                <div style="font-family: tommy_Medium;">10:20 AM </div>
+                               
+                                <img src="../../../../../assets/icons/arrow-blue.svg">
+                            </div>
+                            <div class="soins">
+                                <div class="soinstitre" > Soins : </div > Consultation a domicile
+                                  </div>
+                            <div class="soins">
+                                <div class="Emplacement" >Emplacement : </div> immeuble kaila sahloul, Sousse
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+        </p-calendar>
+    </div>
+</div>

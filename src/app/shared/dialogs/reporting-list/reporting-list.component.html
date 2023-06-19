@@ -1,0 +1,107 @@
+<div class="wrapper">
+  <div class="card">
+    <div class="">
+      <i
+        (click)="close('ReportingListModal')"
+        class="flex flex-row-reverse fa-regular fa-circle-xmark"
+      ></i>
+    </div>
+
+    <div class="flex flex-row">
+      <div>
+        <div class="flex p-3 flex-column justify-content-start">
+          <div class="content flex flex-column justify-content-start">
+            <span class="titre">Veuillez sélectionner une raison</span>
+            <div class="radioButton m-1">
+              <p-radioButton
+                value="Fauxcompte"
+                [(ngModel)]="checked"
+                styleClass="checkradioButton"
+                inputId="ingredient1"
+              ></p-radioButton>
+              <label class="labels">Faux compte</label>
+            </div>
+            <div class="radioButton m-1">
+              <p-radioButton
+                value="FauxNom"
+                styleClass="checkradioButton"
+                [(ngModel)]="checked"
+                inputId="ingredient2"
+              ></p-radioButton>
+              <label class="labels">Faux Nom</label>
+            </div>
+            <div class="radioButton m-1">
+              <p-radioButton
+                styleClass="checkradioButton"
+                value="Harcelement"
+                [(ngModel)]="checked"
+                inputId="ingredient3"
+              ></p-radioButton>
+              <label class="labels">Harcèlement ou intimidation</label>
+            </div>
+            <div class="radioButton m-1">
+              <p-radioButton
+                value="Annulation"
+                styleClass="checkradioButton"
+                [(ngModel)]="checked"
+                inputId="ingredient4"
+              ></p-radioButton>
+              <label class="labels">Annulation de dernière minute</label>
+            </div>
+            <div class="radioButton m-1">
+              <p-radioButton
+                value="Mohamedali"
+                styleClass="checkradioButton"
+                [(ngModel)]="checked"
+                inputId="ingredient5"
+              ></p-radioButton>
+              <label class="labels">Ne pas se présenter au rendez-vous</label>
+            </div>
+            <div class="radioButton m-1">
+              <p-radioButton
+                value="Autre"
+                styleClass="checkradioButton"
+                [(ngModel)]="checked"
+                inputId="ingredient6"
+              ></p-radioButton>
+              <label class="labels"
+                >Demande plus d'argent que le prix indiqué sur la demande</label
+              >
+            </div>
+            <div class="radioButton m-1">
+              <p-radioButton
+                value="Autre"
+                styleClass="checkradioButton"
+                [(ngModel)]="checked"
+                inputId="ingredient6"
+              ></p-radioButton>
+              <label class="labels"
+                >Autre, veuillez expliquer davantage :</label
+              >
+            </div>
+            <div>
+              <textarea
+                class="paragraph_text"
+                pInputTextarea
+                cols="25"
+                rows="3"
+              ></textarea>
+            </div>
+          </div>
+          <div class="buttons">
+            <button class="Continuer flex justify-content-center">
+              Signaler
+            </button>
+            <button
+              (click)="close('ReportingListModal')"
+              class="Annuler flex justify-content-center"
+            >
+              Annuler
+            </button>
+          </div>
+        </div>
+      </div>
+      <div></div>
+    </div>
+  </div>
+</div>

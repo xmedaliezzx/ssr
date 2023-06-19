@@ -1,0 +1,247 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+.leftSide {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  overflow-y: auto;
+}
+.rightSide {
+  width: 59%;
+  img {
+    max-width: 1014px;
+    max-height: 771px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+.title {
+  color: var(--green);
+  font-family: tommy_Medium;
+  font-size: 18px;
+  text-align: left;
+}
+
+.light-card {
+  width: 100%;
+  background-color: var(--blanc);
+  max-width: 580px;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 3px 6px #00000029 !important;
+  position: relative;
+  margin-bottom: 10px;
+  text-align: center;
+  justify-content: center;
+}
+
+.prestataire-img {
+  width: 130.99px;
+  height: 130.99px;
+  border-radius: 62%;
+  object-fit: cover;
+ // margin: 20px;
+}
+
+.name {
+  color: var(--blue-2);
+  font-weight: bold;
+  font-family: tommy_Medium;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.19px;
+}
+.prestataire_type {
+  color: var(--gris);
+  font-family: tommy_Light;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0.15px;
+}
+.fa-circle-check {
+  color: var(--blueCheck);
+  font-size: 15px;
+}
+.disponible {
+  color: var(--green2);
+  font-family: tommy_Regular;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.15px;
+  line-height: 20px;
+}
+
+.star {
+  max-width: 9px;
+  margin-left: -6px;
+}
+.stars {
+  margin-right: 80px;
+}
+.cote {
+  color: var(--blue-2);
+  font-family: tommy_Regular;
+  font-size: 11px;
+  line-height: 16px;
+  margin-right: 65px;
+  letter-spacing: 0.15px;
+  line-height: 25px;
+}
+
+.arrived {
+  color: var(--blue-2);
+  font-family: tommy_Bold;
+  font-size: 18px;
+  text-align: left;
+  letter-spacing: 0.19px;
+  line-height: 25px;
+  margin-top: 20px;
+}
+.lottie {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+margin-top:20px;
+}
+
+.lottie .inside {
+  width: 186px;
+  height: 186px;
+}
+.note {
+  color: var(--blue-2);
+  font-family: tommy_Regular;
+  font-size: 18px;
+  text-align: left;
+  line-height: 51px;
+}
+.star2 {
+  max-width: 40;
+}
+.paragraph_text {
+  padding: 25px;
+  margin-top: 20px;
+  border-radius: 12px;
+  border-color: var(--green);
+  width: 100%;
+  max-width: 400px;
+}
+::placeholder {
+  opacity: 1;
+  font-size: 12px;
+  color: var(--grisBorder);
+}
+button {
+  font-family: tommy_Regular;
+  background-color: var(--green);
+  width: 125px;
+  height: 52px;
+  font-size: 18px;
+  color: var(--blanc);
+  border-radius: 10px;
+  border-color: #e9e9e900 !important;
+  text-align: center;
+  align-items: center;
+  margin-top: 3px;
+}
+
+@media screen and (max-width: 430px) {
+  .title {
+    font-size: 16px;
+  }
+
+  .name {
+    font-size: 16px;
+  }
+  .prestataire_type {
+    font-size: 14px;
+  }
+  .prestataire-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 62%;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .content {
+    flex-direction: column-reverse;
+  }
+  .lottie .inside {
+    width: 150px;
+    height: 150px;
+  }
+  .rightSide {
+    width: 100%;
+    img {
+      aspect-ratio: auto;
+      height: auto;
+      width: 100%;
+    }
+  }
+  .leftSide {
+    width: 100%;
+  }
+  .star2 {
+    max-width: 30px;
+  }
+  .light-card {
+    max-width: 100% !important;
+  }
+  .rightSide {
+    max-width: 100% !important;
+  }
+}
+
+// @media screen and (min-width: 1023px) {
+
+//     .rightSide {
+//         width: 59%;
+//         img {
+//             max-width: 932px;
+//             max-height: 714px;
+//             width: 108%;
+//             height: 130%;
+//             object-fit: cover
+
+//         }
+//       }
+//       .leftSide {
+
+//         height: 723px !important;
+
+//       }
+//       .light-card{
+//         padding: 55px
+
+//       }
+//       .box {
+//         height: 723px !important;
+//       }
+//       button {
+
+//         margin-bottom: 10px;
+//       }
+//   }
+@media screen and (max-width: 800px) {
+  .leftSide {
+    width: 100%;
+  }
+}

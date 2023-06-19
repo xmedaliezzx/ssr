@@ -1,0 +1,42 @@
+.wrapper {
+    width: 100%;
+    overflow-y: auto;
+    overflow: auto;
+  max-height: 80vh;
+  }
+  .wrapper::-webkit-scrollbar {
+    width: 0px; 
+    /* Width of the scrollbar */
+  }
+  .title {
+    color: var(--blue-2);
+    font-size: clamp(20px, 75%, 40px);
+    font-family: buttershine;
+    text-align: center;
+  margin-top: 15px;
+    display: flex;
+  }
+  .subtitle {
+    display: flex;
+    align-items: center;
+  }
+  .link {
+    color: var(--blue);
+  }
+  span {
+    color: var(--green);
+    font-size: 18px;
+    font-weight: 900;
+  }
+  .fa-caret-left {
+    color: var(--green);
+  }
+  .button{
+        background-color: var(--green);
+    border-radius: 5px;
+    width: 123px;
+    height: 38px;
+    margin-left: 20px;
+    border: 0;
+    color: var(--white);
+  }

@@ -1,0 +1,103 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+    max-width: 550px;
+    // max-height: 733px;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card {
+    width: 100%;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-direction: row;
+     margin-bottom: 10px;
+    margin-top:30px;
+    margin-left:10px;}
+  .Continuer {
+    background-color: var(--green);
+    max-width: 155px;
+    width: 125px;
+    height: 40px;
+    font-size: 16px;
+    color: var(--blanc);
+    border-radius: 10px;
+    border-color: #e9e9e900 !important;
+    text-align: center;
+    align-items: center;
+   
+  }
+  .Annuler {
+    background-color: var(--blanc);
+    max-width: 155px;
+    width: 125px;
+    height: 40px;
+    font-size: 16px;
+    color: var(--green);
+    border-radius: 10px;
+    border-color: var(--green) !important;
+    text-align: center;
+    align-items: center;
+    margin-left: 20px;
+    border-style: solid;
+    border-width: 1.5px;
+  
+  }
+  .paragraph_text {
+    padding: 10px;
+    width: 90%;
+    border-radius: 12px;
+    background-color: var(--white);
+    border-color: var(--grisBorder);
+    margin-top:0px;
+  }
+  .titre {
+    font-size: 20px;
+    color: var(--blue-2);
+    font-family: tommy_Bold;
+  
+    margin-left: 10px;
+  
+  }
+  
+  ::ng-deep .labels {
+    margin-left: 5px;
+    color: var(--blue-2);
+    font-size: 16px;
+  }
+  
+  ::ng-deep .radioButton {
+    padding: 5px;
+    //font-size: 18px;
+    color: var(--blue-2);
+    font-family: tommy_Regular;
+  
+    .checkradioButton .p-radiobutton-box .p-radiobutton-icon {
+      background-color: var(--green);
+    }
+    border-color: var(--green);
+  
+    .checkradioButton .p-radiobutton-box.p-highlight {
+      width: 50px;
+      border-color: var(--green);
+      background: var(--blanc);
+      border: solid;
+    }
+    .checkradioButton .p-radiobutton-box {
+      border: 2px solid var(--blue-2);
+    }
+    .checkradioButton .p-radiobutton-box.p-highlight {
+      border: 2px solid var(--green);
+    }
+  }
+  ::ng-deep {
+    .background {
+      background-color: var(--white) !important;
+    }
+  }
+  

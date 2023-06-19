@@ -1,0 +1,127 @@
+.wrapper {
+  width: 90%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 22px;
+  color: #2e3c66;
+  font-family: buttershine;
+}
+
+.link {
+  font-size: 16px;
+  color: #1b8793;
+  font-family: tommy_Regular;
+}
+
+::ng-deep .boxcalendar {
+  padding: 0.75rem;
+  background: #ffffff;
+  box-shadow: 0px 3px 6px #00000029 !important;
+  color: #323130;
+  min-width: 100%;
+  border-radius: 11px;
+
+  .p-calendar {
+    position: relative;
+    display: inline-flex;
+    // max-width: 100%;
+    // width: 100%;
+  }
+
+  .p-datepicker {
+    border: 0;
+    color: #2e3c66;
+    font-family: tommy_Regular;
+    font-size: 17px;
+  }
+
+  .p-datepicker table td.p-datepicker-today>span {
+    background: #1b8793 !important;
+    border-radius: 50% !important;
+  }
+
+  .p-datepicker:not(.p-disabled) table td span:not(.p-highlight):not(.p-disabled):hover {
+    background: #f3f2f1;
+    border-radius: 50% !important;
+  }
+
+  .p-datepicker table td>span.p-highlight {
+    color: #323130;
+    background: #edebe9;
+    border-radius: 50% !important;
+  }
+
+  .p-datepicker .p-datepicker-header .p-datepicker-title .p-datepicker-year,
+  .p-datepicker .p-datepicker-header .p-datepicker-title .p-datepicker-month {
+    color: #2e3c66;
+    font-family: tommy_Bold;
+  }
+
+  .p-datepicker .p-datepicker-header {
+    border-bottom: 0.5px solid #b3b3b3;
+  }
+}
+
+.topcalendar {
+  background-color: #dddfe6;
+  width: 100%;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  background-color: #dddfe6;
+  width: 100%;
+}
+
+.footercalendar {
+  border-left: 3px solid #2e3c66;
+  padding-left: 10px;
+  margin: 15px;
+  width: 90%;
+  height: 100%;
+}
+
+.event {
+  font-size: clamp(13px, 70%, 15px);
+  font-family: tommy_Regular;
+}
+
+.date {
+  display: flex;
+  justify-content: space-between;
+}
+
+.soins {
+  display: flex;
+
+  .soinstitre {
+    font-family: tommy_Medium;
+    margin-right: 3px;
+  }
+
+  .Emplacement {
+    font-family: tommy_Medium;
+    margin-right: 3px;
+  }
+}
+
+::ng-deep .boxcalendar {
+  @media (max-width: 500px) {
+    .p-calendar {
+      position: relative;
+      display: inline-flex;
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+}

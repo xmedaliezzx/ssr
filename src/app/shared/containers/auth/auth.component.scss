@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-top:86px
+}
+
+.col1 {
+    width: 100%;
+    max-width: 550px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+ 
+}
+.img{
+    width: 100%;
+    max-width: 343px;
+}
+
+.imgbebe{
+    // margin-right: 50px;
+
+}
+.col2 {
+    max-width: 550px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 1023px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}

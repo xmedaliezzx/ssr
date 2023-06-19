@@ -1,0 +1,105 @@
+{
+  "Soins Spéciaux": "Soins Spéciaux",
+  "Et Meilleur Traitements": "Et Meilleur Traitements",
+  "AUTH_FEATURES": {
+    "SIGNIN": {
+      "TITLE": "Connectez-vous",
+      "EMAIL_REQUIRED": "L'email est obligatoire",
+      "EMAIL_NOT_VALID": "L'email n'est pas valide",
+      "PASSWORD_REQUIRED": "Le mot de passe est obligatoire",
+      "SIGNIN_BUTTON": "Se connecter",
+      "PASSWORD_LENGTH": "Le mot de passe doit comporter plus de 6 caractères",
+      "STAY_CONNECTED": "Rester connecté",
+      "FORGOT_PASSWORD": "Mot de passe oublié ?",
+      "DONT_HAVE_ACCOUNT": "Vous n'avez pas de compte",
+      "SIGNUP": "S'inscrire",
+      "SIGN_IN": "Se connecter",
+      "SIGN_IN_SUCCESS": "Vous êtes connecté avec succès"
+    },
+    "SIGNUP": {
+      "TITLE": "Créer votre compte",
+      "EMAIL_REQUIRED": "Email is required",
+      "PASSWORD_REQUIRED": "Mot de passe is required",
+      "SIGNIN_BUTTON": "Se connecter",
+      "PASSWORD_LENGTH": "Password must be longer than 4 characters",
+      "STAY_CONNECTED": "Stay connected",
+      "FORGOT_PASSWORD": "Forgot your password?",
+      "DONT_HAVE_ACCOUNT": "You do not have an account",
+      "SIGNUP": "Signup",
+      "SIGN_UP_SUCCESS": "Vous êtes inscrit avec succès"
+    }
+  },
+  "SHARED": {
+    "EMAIL": "Email",
+    "PASSWORD": "Mot de passe",
+    "NAVBAR": {
+      "HOME": "Page d'acceuil",
+      "RDV": "Mes Rendez-vous",
+      "SERVICES": "Services",
+      "HELP": "Aide",
+      "DASHBOARD": "Tableau de bord",
+      "LOGIN": "Se Connecter",
+      "LOGOUT": "Se Déconnecter",
+      "REGISTER": "S'inscrire",
+      "PROFILE": "Mon Profil",
+      "PRESTATAIRE": "Espace prestataire"
+    },
+    "ERRORS": {
+      "EMAIL_REQUIRED": "L'e-mail est requis",
+      "EMAIL_INVALID": "L'e-mail n'est pas valide",
+      "PASSWORD_REQUIRED": "Mot de passe requis",
+      "PASSWORD_LENGTH_ERR": "Le mot de passe doit comporter plus de 6 caractères",
+      "CONFIRM_PASSWORD_REQUIRED": "La confirmation du mot de passe est requise",
+      "CONFIRM_PASSWORD_LENGTH_ERR": "La confirmation du mot de passe doit comporter plus de 6 caractères",
+      "PASSWORD_MATCH_ERR": "Les mots de passe ne correspondent pas"
+    },
+    "VOUSETES":{
+      "VOUSETES_TITLE" :"vous Etes",
+      "PARAMEDICAL":"Paramédical",
+      "MEDECINS":"Médecins",
+      "TRANSPORT_MEDICAL":"Transport Medical",
+      "RETIREMENT_HOME" :"Maison De Retraite",
+      "PARAPHARMACIE":"Parapharmacie",
+      "LABORATOIRES":"Laboratoires",
+      "BABY_SITTING" :"Garde d'enfants",
+      "POMP_FUNÈBRE":"Pomp Funèbre"
+    }
+  },
+  "RESET_PASSWORD_FEATURES": {
+    "CHECK_INBOX": {
+      "TITLE": "Consultez votre boîte de réception",
+      "MAIL_SECTION": "Nous vous avons envoyé un e-mail sur",
+      "BUTTON_TXT": "Reventir En Arriere"
+    },
+    "EXPIRED_LINK": {
+      "TEXT": "Le lien est déjà expiré.Essayer à nouveau",
+      "BUTTON_TXT": "Renvoyer"
+    },
+    "RESET_PASSWORD": {
+      "TITLE": "Mot de passe oublié",
+      "RESET_METHOD": "Veuillez choisir la méthode que vous souhaitez pour réinitialiser votre mot de passe",
+      "SEND_MAIL_TXT": "Nous vous enverrons un e-mail pour récupérer votre compte",
+      "EMAIL_LABEL": "Email",
+      "BUTTON_TXT": "Envoyer"
+    },
+    "RESET_PASSWORD_SUCCESS": {
+      "TITLE": "Réinitialisation réussie",
+      "RESET_SUCCESS": "Votre mot de passe a été réinitialisé avec succès. Cliquez ci-dessous pour vous connecter",
+      "BUTTON_TXT": "Continuer"
+    },
+    "SET_RESET_PASSWORD": {
+      "TITLE": "Definir un nouveau mot de passe",
+      "WARNING_MSG": "Votre nouveau mot de passe doit être différent du mot de passe utilisé précédemment",
+      "ENTER_NEW_PWD": "Entrer le nouveau mot de passe",
+      "CONFIRM_NEW_PWD": "Confirmer le nouveau mot de passe",
+      "CONNECT_BUTTON": "Se connecter",
+      "RESET_BUTTON": "Réinitialiser"
+    },
+    "SUCCESS_EMAIL_VERIF": {
+      "TITLE": "Vérification Réussie",
+      "SUCCESS_MSG": "Votre adresse mail est vérifiée avec succès",
+      "BUTTON_TXT": "Continuer"
+    }
+   
+  }
+}

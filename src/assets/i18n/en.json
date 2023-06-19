@@ -1,0 +1,103 @@
+{
+  "Soins Spéciaux": "Special Care",
+  "Et Meilleur Traitements": "And Best Treatments",
+  "AUTH_FEATURES": {
+    "SIGNIN": {
+      "TITLE": "Connectez-vous",
+      "EMAIL_REQUIRED": "Email is required",
+      "EMAIL_NOT_VALID": "Email is not valid",
+      "PASSWORD_REQUIRED": "Password is required",
+      "SIGNIN_BUTTON": "Sign in",
+      "PASSWORD_LENGTH": "Password must be longer than 6 characters",
+      "STAY_CONNECTED": "Stay connected",
+      "FORGOT_PASSWORD": "Forgot your password?",
+      "DONT_HAVE_ACCOUNT": "You do not have an account",
+      "SIGNUP": "Sign up",
+      "SIGN_IN": "Sign in",
+      "SIGN_IN_SUCCESS": "You are successfully logged in"
+    },
+    "SIGNUP": {
+      "TITLE": "Créer votre compte",
+      "EMAIL_REQUIRED": "Email is required",
+      "PASSWORD_REQUIRED": "Mot de passe is required",
+      "SIGNIN_BUTTON": "Se connecter",
+      "PASSWORD_LENGTH": "Password must be longer than 4 characters",
+      "STAY_CONNECTED": "Stay connected",
+      "FORGOT_PASSWORD": "Forgot your password?",
+      "DONT_HAVE_ACCOUNT": "You do not have an account",
+      "SIGNUP": "Signup",
+      "SIGN_UP_SUCCESS": "You are successfully signed up"
+    }
+  },
+  "SHARED": {
+    "EMAIL": "Email",
+    "PASSWORD": "Mot de passe",
+    "NAVBAR": {
+      "HOME": "Home",
+      "RDV": "Appointment",
+      "SERVICES": "Services",
+      "HELP": "HELP",
+      "DASHBOARD": "Dashboard",
+      "LOGIN": "Login",
+      "LOGOUT": "Logout",
+      "REGISTER": "Register",
+      "PROFILE": "Profile"
+    },
+    "ERRORS": {
+      "EMAIL_REQUIRED": "E-mail is required",
+      "EMAIL_INVALID": "E-mail is not valid",
+      "PASSWORD_REQUIRED": "Password required",
+      "PASSWORD_LENGTH_ERR": "The password must be more than 6 characters long",
+      "CONFIRM_PASSWORD_REQUIRED": "Password confirmation is required",
+      "CONFIRM_PASSWORD_LENGTH_ERR": "The password confirmation must be more than 6 characters long",
+      "PASSWORD_MATCH_ERR": "Passwords do not match"
+    },
+    "VOUSETES": {
+      "VOUSETES_TITLE": "You Are",
+      "PARAMEDICAL":"Paramedical",
+      "MEDECINS":"Doctors",
+      "TRANSPORT_MEDICAL":"Medical Transportation",
+      "RETIREMENT_HOME" :"Retirement Home",
+      "PARAPHARMACIE":"Parapharmacy",
+      "LABORATOIRES":"Laboratoires",
+      "BABY_SITTING" :"Baby-Sitting",
+      "POMP_FUNÈBRE":"funeral parlour"
+    }
+  },
+  "RESET_PASSWORD_FEATURES": {
+    "CHECK_INBOX": {
+      "TITLE": "Check your inbox",
+      "MAIL_SECTION": "We have sent you an e-mail on",
+      "BUTTON_TXT": "Back"
+    },
+    "EXPIRED_LINK": {
+      "TEXT": "The link has already expired. try again",
+      "BUTTON_TXT": "Resend"
+    },
+    "RESET_PASSWORD": {
+      "TITLE": "Forgotten password",
+      "RESET_METHOD": "Please select the method you wish to use to reset your password",
+      "SEND_MAIL_TXT": "We will send you an email to recover your account.",
+      "EMAIL_LABEL": "Email",
+      "BUTTON_TXT": "Send"
+    },
+    "RESET_PASSWORD_SUCCESS": {
+      "TITLE": "Successful reset",
+      "RESET_SUCCESS": "Your password has been successfully reset. Click below to login",
+      "BUTTON_TXT": "Continue"
+    },
+    "SET_RESET_PASSWORD": {
+      "TITLE": "Set a new password",
+      "WARNING_MSG": "Your new password must be different from your previous password",
+      "ENTER_NEW_PWD": "Enter the new password",
+      "CONFIRM_NEW_PWD": "Confirm the new password",
+      "CONNECT_BUTTON": "Sign inReset",
+      "RESET_BUTTON": "Reset"
+    },
+    "SUCCESS_EMAIL_VERIF": {
+      "TITLE": "Verification Passed",
+      "SUCCESS_MSG": "Your email address is successfully verified",
+      "BUTTON_TXT": "Continue"
+    }
+  }
+}

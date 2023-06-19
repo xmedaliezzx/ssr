@@ -1,0 +1,166 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 19px;
+  color: #2e3c66;
+  font-family: buttershine;
+}
+.headerbox{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 5px;
+}
+// ::ng-deep {
+//   .btn-round {
+//     border-radius: 30px !important;
+//   }
+// }
+
+.margin-5 {
+  margin-bottom: 5px;
+}
+
+.link {
+  font-size: 16px;
+  color: #1b8793;
+  font-family: tommy_Regular;
+}
+
+.box1 {
+  width: 100%;
+  height: max-content;
+  background-color: #2e3c66;
+  box-shadow: 0px 3px 6px #00000029 !important;
+  border-radius: 11px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+.info {
+  display: flex;
+  flex-direction: row;
+
+  .profileinfo {
+    display: flex;
+    // align-items: center;
+    justify-content: space-between;
+    .imagebell {
+      width: 27px;
+      height: 35px;
+      margin-left: 40px;
+    }
+  }
+  .name {
+    font-family: tommy_Medium;
+    display: flex;
+    color: var(--white);
+    font-size: 16px;
+
+  }
+  .date {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+  .time {
+    flex: 0.5;
+    display: flex;
+    align-items: center;
+  }
+  .infodate {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 13px;
+  }
+  .imagetime {
+    width: 15px;
+    margin-right: 8px;
+  }
+  .imageCalander {
+    width: 16px;
+    margin-right: 8px;
+  }
+  .profilePhoto {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+.empl {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+.whiteLoc {
+  margin-right: 8px;
+}
+.details {
+  font-size: 14px;
+  color: #ffffff;
+  font-family: tommy_Regular;
+  font-size: 15px;
+  line-height: 22px;
+}
+.profileinfoo {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.profileimage{
+ 
+    display: flex;
+    justify-content: center;
+}
+.profilePhoto{
+  width: 44px;
+  height: 44px;
+   border-radius: 50%; 
+   object-fit: cover;
+}
+
+@media (max-width: 1130px) {
+  .info {
+justify-content: center;
+    flex-direction: column;}
+
+}
+@media (max-width: 1020px) {
+
+  .info {
+    justify-content: center;
+    flex-direction: row;
+  }
+  .imageprofile {
+    width: 70px;
+    height: 70px;
+ 
+}
+}
+
+@media (max-width: 450px) {
+  .info {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+
+.profileimage{
+  display: flex;
+  justify-content: center;
+
+}
+}

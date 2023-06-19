@@ -1,0 +1,26 @@
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background-color: var(--white);
+    .lottie {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        span{
+            font-size: clamp(15px, 2vw, 20px);
+            font-family: tommy_Regular;
+        }
+        .inside {
+            width: 204px;
+            height: 204px;
+        }
+    }
+    
+}

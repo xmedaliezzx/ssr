@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="title">Créer votre compte</div>
+    <div class="subtitle">
+        <div>
+            <p class="text">Avez vous déjà un compte? &nbsp;</p>
+        </div>
+        <div><a href="#blank" class="link">Se connecter</a></div>
+    </div>
+    <app-form [dynamicform]="signUpForm" [flexDirection]="'row'"></app-form>
+    <p-button type="submit" [loading]="loading" (click)="signup()" styleClass="btn-Signup">S'inscrire</p-button>
+</div>

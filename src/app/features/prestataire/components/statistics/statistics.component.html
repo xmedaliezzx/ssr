@@ -1,0 +1,80 @@
+<div class="wrapper">
+    <div class="header">
+        <div class="title">
+            Statistiques
+        </div>
+        <div (click)="statistic()" class="link">
+       
+            <img src="../../../../../assets/icons/arrow.svg" >
+        </div>
+    </div>
+    <div class="box1">
+        <div style="display: flex; flex: 0.5;">
+            <img style="width: 28px; margin-right: 9px;" src="../../../../../assets/icons/patient.svg">
+            <div class="text">
+                <div style="font-family: tommy_Medium;">90</div>
+                <div>Patients</div>
+            </div>
+        </div>
+        <div style="display: flex; flex: 1;">
+            <img style="width: 27px; margin-right: 9px;" src="../../../../../assets/icons/consultant.svg">
+            <div class="text">
+                <div style="font-family: tommy_Medium;">80 </div>
+                <div>Consultations à domicile</div>
+            </div>
+        </div>
+        <div style="display: flex; flex: 1;">
+            <img style="width: 27px; margin-right: 9px;" src="../../../../../assets/icons/consultant.svg">
+            <div class="text">
+                <div style="font-family: tommy_Medium;">10 </div>
+                <div>Déclarations de décès</div>
+            </div>
+        </div>
+    </div>
+    <div class="box2">
+        <div class="header">
+            <div class="text">
+                Statistiques de revenus pour <span style=" font-family: tommy_Bold;">les appels immédiats </span> 
+            </div>
+            <div class="buttons">
+                <div class="month " (click)="day()" [class.active]="!jour">
+                    Jour
+                </div>
+                <div class="month" (click)="month()" [class.active]="jour">
+                    Mois
+                </div>
+            </div>
+        </div>
+        <div *ngIf="!jour" class="card">
+            <p-chart type="bar" max-width="20vw" height="200"  [responsive]="true"  [data]="data" [options]="options">les rendez vous</p-chart>
+        </div>
+
+        <div *ngIf="jour" class="card">
+            <p-chart type="bar" max-width="20vw" height="200"  [responsive]="true"  [data]="data2" [options]="options">les rendez vous</p-chart>
+        </div>
+
+    </div>
+    <div class="box2">
+
+        <div class="header">
+            <div class="text">
+                Statistiques de revenus pour <span style="font-family: tommy_Bold;">les rendez vous</span> 
+            </div>
+            <div class="buttons">
+                <div class="day ">
+                    Jour
+                </div>
+                <div class="month">
+                    Mois
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <p-chart type="bar" max-width="20vw" height="200"  [responsive]="true"   [data]="data" [options]="options">
+
+
+            </p-chart>
+        </div>
+
+    </div>
+</div>

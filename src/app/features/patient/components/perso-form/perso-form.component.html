@@ -1,0 +1,104 @@
+<form class="form" [formGroup]="PersoInfoForm">
+    <div (click)="retour()" class="profil">
+        <img  style="margin-left: 18px;transform: matrix(-1, 0, 0, -1, 0, 0);" src="../../../../../assets/images/play.svg">
+        Profil
+    </div>
+    <label class="label">Nom</label>
+    <input pInputText formControlName="firstname" class="inputStyle" type="text" />
+    <div *ngIf="
+        PersoInfoForm?.controls?.firstname?.touched &&
+        PersoInfoForm?.controls?.firstname?.invalid
+      ">
+        <small class="p-error">
+            <p class="text-error">Firstname is not valid.</p>
+        </small>
+    </div>
+
+    <label class="label">Prénom</label>
+    <input pInputText formControlName="lastname" class="inputStyle" />
+    <div *ngIf="
+        PersoInfoForm?.controls?.lastname?.touched &&
+        PersoInfoForm?.controls?.lastname?.invalid
+      ">
+        <small class="p-error">
+            <p class="text-error">Last name is not valid.</p>
+        </small>
+    </div>
+    <label class="label">Date de naissance</label>
+    <input pInputText formControlName="birthDate" class="inputStyle" type="date" />
+    <!-- <p-calendar [(ngModel)]="date" styleClass="date" formControlName="birthDate" [showIcon]="true"></p-calendar> -->
+
+    <div *ngIf="
+        PersoInfoForm?.controls?.birthDate?.touched &&
+        PersoInfoForm?.controls?.birthDate?.invalid
+      ">
+        <small class="p-error">
+            <p class="text-error">Birth date is not valid.</p>
+        </small>
+    </div>
+    <label class="label">Gender</label>
+    <p-dropdown styleClass="noHover" [options]="gender" formControlName="gender"></p-dropdown>
+
+    <label class="label">Numéro de CIN</label>
+    <input pInputText formControlName="cin" type="number" class="inputStyle" />
+    <div *ngIf="
+        PersoInfoForm?.controls?.cin?.touched &&
+        PersoInfoForm?.controls?.cin?.invalid
+      ">
+        <small class="p-error">
+            <p class="text-error">Cin is not valid.</p>
+        </small>
+    </div>
+
+    <label class="label">Adresse</label>
+    <input pInputText formControlName="address" class="inputStyle" />
+    <div *ngIf="
+        PersoInfoForm?.controls?.address?.touched &&
+        PersoInfoForm?.controls?.address?.invalid
+      ">
+        <small class="p-error">
+            <p class="text-error">Address is not valid.</p>
+        </small>
+    </div>
+    <div class="address-group">
+        <div class="address">
+            <label class="label">Ville</label>
+            <p-dropdown styleClass="noHover" formControlName="city" [options]="paysTunisie"></p-dropdown>
+            <!-- <input pInputText formControlName="city" class="inputStyle" /> -->
+            <div *ngIf="
+            PersoInfoForm?.controls?.city?.touched &&
+            PersoInfoForm?.controls?.city?.invalid
+          ">
+                <small class="p-error">
+                    <p class="text-error">City is not valid.</p>
+                </small>
+            </div>
+        </div>
+
+        <div class="address">
+            <label class="label">Code postal</label>
+            <input pInputText formControlName="postal" type="number" class="inputStyle" />
+            <div *ngIf="
+            PersoInfoForm?.controls?.postal?.touched &&
+            PersoInfoForm?.controls?.postal?.invalid
+          ">
+                <small class="p-error">
+                    <p class="text-error">Code postal is not valid.</p>
+                </small>
+            </div>
+            <div *ngIf="
+            PersoInfoForm?.controls?.postal?.touched &&
+            PersoInfoForm?.controls?.postal?.invalid
+          ">
+                <small class="p-error" *ngIf="PersoInfoForm?.controls?.postal?.errors?.required">
+                    <p class="text-error">postal is required.</p>
+                </small>
+            </div>
+        </div>
+    </div>
+    <label class="label">Allergie(s)</label>
+    <input formControlName="allergie" type="text" class="inputStyle" pInputText />
+
+    <p-button type="submit" (click)="UpdatePersoInfo()" [loading]="PersoInfoBTNLoading"
+        styleClass="btn-Signup">Sauvegarder</p-button>
+</form>
